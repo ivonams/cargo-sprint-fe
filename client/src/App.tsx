@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 import Home from "@/pages/home";
+import Playground from "@/pages/playground";
 import NotFound from "@/pages/not-found";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             </div>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/playground" element={<Playground />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Toaster />

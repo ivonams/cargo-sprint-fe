@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { Rocket } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -53,17 +54,12 @@ export default function Home() {
           <Button
             variant="default"
             asChild
-            data-testid="button-view-docs"
+            data-testid="button-playground"
           >
-            <a
-              href="https://react.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2"
-            >
-              View Documentation
-              <ExternalLink className="h-4 w-4" />
-            </a>
+            <Link to="/playground" className="inline-flex items-center gap-2">
+              Go to the playground
+              <Rocket className="h-4 w-4" />
+            </Link>
           </Button>
         </div>
       </Card>
