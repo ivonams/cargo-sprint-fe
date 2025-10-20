@@ -99,8 +99,46 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
+        display: ["var(--font-display)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+      },
+      fontSize: {
+        // Display (Lato)
+        'display-lg': ['57px', { lineHeight: '64px', letterSpacing: '-0.25px', fontWeight: '400' }],
+        'display-lg-em': ['57px', { lineHeight: '64px', letterSpacing: '-0.25px', fontWeight: '500' }],
+        'display-md': ['45px', { lineHeight: '52px', letterSpacing: '0px', fontWeight: '400' }],
+        'display-md-em': ['45px', { lineHeight: '52px', letterSpacing: '0px', fontWeight: '500' }],
+        'display-sm': ['36px', { lineHeight: '44px', letterSpacing: '0px', fontWeight: '400' }],
+        'display-sm-em': ['36px', { lineHeight: '44px', letterSpacing: '0px', fontWeight: '500' }],
+        // Headline (Lato)
+        'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '0px', fontWeight: '400' }],
+        'headline-lg-em': ['32px', { lineHeight: '40px', letterSpacing: '0px', fontWeight: '500' }],
+        'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '400' }],
+        'headline-md-em': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '500' }],
+        'headline-sm': ['24px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '400' }],
+        'headline-sm-em': ['24px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '500' }],
+        // Title (Roboto)
+        'title-lg': ['22px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'title-lg-em': ['22px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '500' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0.15px', fontWeight: '400' }],
+        'title-md-em': ['16px', { lineHeight: '24px', letterSpacing: '-0.25px', fontWeight: '500' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'title-sm-em': ['14px', { lineHeight: '20px', letterSpacing: '-0.1px', fontWeight: '500' }],
+        // Body (Roboto)
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'body-lg-em': ['16px', { lineHeight: '24px', letterSpacing: '-0.5px', fontWeight: '500' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '-0.25px', fontWeight: '400' }],
+        'body-md-em': ['14px', { lineHeight: '20px', letterSpacing: '-0.25px', fontWeight: '500' }],
+        'body-sm': ['12px', { lineHeight: '16px', letterSpacing: '-0.4px', fontWeight: '400' }],
+        'body-sm-em': ['12px', { lineHeight: '16px', letterSpacing: '-0.4px', fontWeight: '500' }],
+        // Label (Roboto)
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '-0.1px', fontWeight: '400' }],
+        'label-lg-em': ['14px', { lineHeight: '20px', letterSpacing: '-0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'label-md-em': ['12px', { lineHeight: '16px', letterSpacing: '-0.5px', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'label-sm-em': ['11px', { lineHeight: '16px', letterSpacing: '-0.5px', fontWeight: '500' }],
       },
       keyframes: {
         "accordion-down": {
