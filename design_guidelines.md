@@ -78,13 +78,47 @@ The color system is based on the Sprint Design System with a comprehensive multi
 - Maintain 4.5:1 minimum contrast ratio for accessibility
 - Refer to `shared/sprint-ds-colors.ts` for complete color token reference
 
-### B. Typography
-- **Font Family:** Inter (Google Fonts) for all text
-- **Headings:** 
-  - H1: 48px/56px, font-weight 700
-  - H2: 24px/32px, font-weight 600
-- **Body:** 16px/24px, font-weight 400
-- **Code:** JetBrains Mono for inline code snippets
+### B. Typography (Sprint DS)
+
+The typography system uses two font families following Material Design 3 guidelines:
+
+**Font Families:**
+- **Lato:** Used for Display and Headline text to maintain visual hierarchy
+- **Roboto:** Used for Title, Body, and Label text, paragraphs, and UI components
+
+**Typography Scale:**
+
+**Display (Lato):**
+- Display Large: 57px / 64px line-height, Regular (400) or Medium (500), -0.25px letter-spacing
+- Display Medium: 45px / 52px line-height, Regular (400) or Medium (500), 0px letter-spacing
+- Display Small: 36px / 42-44px line-height, Regular (400) or Medium (500), 0px letter-spacing
+
+**Headline (Lato):**
+- Headline Large: 30-32px / 40px line-height, Regular (400) or Medium (500), 0px letter-spacing
+- Headline Medium: 28px / 36px line-height, Regular (400) or Medium (500), 0px letter-spacing
+- Headline Small: 24px / 32px line-height, Regular (400) or Medium (500), 0px letter-spacing
+
+**Title (Roboto):**
+- Title Large: 22px / 28px line-height, Regular (400) or Medium (500), 0px letter-spacing
+- Title Medium: 16px / 24px line-height, Regular (400) or Medium (500), 0.15px/-0.25px letter-spacing
+- Title Small: 14px / 20px line-height, Regular (400) or Medium (500), 0.1px/-0.1px letter-spacing
+
+**Body (Roboto):**
+- Body Large: 16px / 24px line-height, Regular (400) or Medium (500), -0.5px letter-spacing
+- Body Medium: 14px / 20px line-height, Regular (400) or Medium (500), -0.25px letter-spacing
+- Body Small: 12px / 16px line-height, Regular (400) or Medium (500), -0.4px letter-spacing
+
+**Label (Roboto):**
+- Label Large: 14px / 20px line-height, Regular (400) or Medium (500), -0.1px letter-spacing
+- Label Medium: 12px / 16px line-height, Regular (400) or Medium (500), -0.5px letter-spacing
+- Label Small: 11px / 16px line-height, Regular (400) or Medium (500), -0.5px letter-spacing
+
+**Typography Guidelines:**
+- Use Medium weight (500) sparingly for emphasis
+- Maintain consistent alignment patterns throughout the interface
+- Follow the type scale for readability and visual hierarchy
+- Use Lato for large, attention-grabbing text
+- Use Roboto for all UI components and body content
 
 ### C. Layout System
 - **Spacing Units:** Use Tailwind units of 4, 8, 16, 24
