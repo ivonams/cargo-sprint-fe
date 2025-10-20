@@ -6,20 +6,47 @@
 
 ## Core Design Elements
 
-### A. Color Palette
-**Light Mode:**
-- Primary: 220 70% 50% (Modern blue)
-- Background: 0 0% 98%
-- Text Primary: 220 15% 20%
-- Text Secondary: 220 10% 50%
-- Border: 220 15% 90%
+### A. Color Palette (Sprint DS)
+The color system is based on the Sprint Design System with a teal/cyan color palette.
 
-**Dark Mode:**
-- Primary: 220 70% 60%
-- Background: 220 15% 10%
-- Text Primary: 220 15% 95%
-- Text Secondary: 220 10% 70%
-- Border: 220 15% 25%
+**Sprint DS Primary Color Scale:**
+- primary-100: #F6FFFF (Lightest)
+- primary-98: #EDFCFF
+- primary-95: #D0F8FF
+- primary-90: #9FEFFD
+- primary-80: #83D3E0
+- primary-70: #67B7C4
+- primary-60: #4B9CA9
+- primary-50: #2C828F (Main primary for light mode)
+- primary-40: #016C78
+- primary-35: #005B66
+- primary-30: #004F58
+- primary-25: #00424A
+- primary-20: #00363D
+- primary-15: #002B30
+- primary-10: #001F24
+- primary-5: #001417
+- primary-0: #000000 (Darkest)
+
+**Light Mode (HSL):**
+- Primary: 189 53% 37% (#2C828F - primary-50)
+- Primary Foreground: 180 100% 98% (#F6FFFF - primary-100)
+- Background: 0 0% 98%
+- Foreground (text): 187 100% 12% (#00363D - primary-20)
+- Border: 189 30% 90%
+- Card: 0 0% 96%
+- Secondary: 189 30% 88%
+- Accent: 189 30% 88%
+
+**Dark Mode (HSL):**
+- Primary: 188 60% 70% (#83D3E0 - primary-80)
+- Primary Foreground: 187 100% 5% (#001417 - primary-5)
+- Background: 187 100% 5%
+- Foreground (text): 189 96% 90% (#9FEFFD - primary-90)
+- Border: 187 50% 20%
+- Card: 187 100% 8%
+- Secondary: 187 50% 18%
+- Accent: 187 50% 18%
 
 ### B. Typography
 - **Font Family:** Inter (Google Fonts) for all text
