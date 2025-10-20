@@ -33,7 +33,15 @@ This project follows best practices from several guideline documents:
 - CSS variables for theming support (light/dark mode)
 - Material Design principles with modern minimalism aesthetic
 
-**Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root.
+**Design System - Sprint DS**: 
+- Complete color system with 10 palettes: Primary (Teal/Cyan), Secondary (Blue), Tertiary (Green), Error (Red), Info (Blue), Success (Green), Warning (Orange/Amber), Neutral (Grays), and Neutral Variants
+- Each palette includes full 0-100 scales for granular control
+- Color tokens defined in `shared/sprint-ds-colors.ts`
+- Semantic tokens (success, warning, info, error) configured in `index.css` with automatic dark/light mode support
+- All colors available as Tailwind utilities via `tailwind.config.ts`
+- Comprehensive documentation in `design_guidelines.md`
+
+**Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All Sprint DS colors automatically adapt to the selected theme.
 
 ### Backend Architecture
 

@@ -31,6 +31,7 @@ export const sprintDSColors = {
 
   // Secondary Colors (Blue) - Supporting elements
   secondary: {
+    100: '#FFFFFF',
     99: '#FEFBFF',
     98: '#F9F9FF',
     95: '#EDF0FF',
@@ -138,37 +139,47 @@ export const sprintDSColors = {
     0: '#000000',
   },
 
-  // Warning Colors - Warning states and caution
+  // Warning Colors (Orange/Amber) - Warning states and caution
   warning: {
-    // Note: Specific warning color values not fully visible in metadata
-    // Using tertiary (green-yellow) as placeholder - should be updated with actual values
-    95: '#BDFFDE',
-    90: '#65FCC1',
-    80: '#41DFA7',
-    70: '#02C38D',
-    60: '#00A576',
-    50: '#008861',
+    100: '#FFFFFF',
+    99: '#FFFBF6',
+    98: '#FFF8F2',
+    95: '#FFEDDF',
+    90: '#FFDCBE',
+    80: '#FFBA7F',
+    70: '#F99748',
+    60: '#DC7A2F',
+    50: '#BF5F17',
+    40: '#A34800',
+    35: '#8D3D00',
+    30: '#773300',
+    25: '#622900',
+    20: '#4D1F00',
+    15: '#391600',
+    10: '#270E00',
+    5: '#170700',
+    0: '#000000',
   },
 
-  // Neutral Colors - Text, backgrounds, and structural elements
+  // Neutral Colors (Grays) - Text, backgrounds, and structural elements
   neutral: {
     100: '#FFFFFF',
-    99: '#FEFBFF',
-    98: '#F9F9FF',
-    95: '#EDF0FF',
-    90: '#D8E2FF',
-    80: '#ADC6FF',
-    70: '#81AAFF',
-    60: '#4D8EFF',
-    50: '#2872E2',
-    40: '#005AC2',
-    35: '#004FAB',
-    30: '#004395',
-    25: '#00397F',
-    20: '#002E6A',
-    15: '#002455',
-    10: '#001A42',
-    5: '#00102D',
+    99: '#FCFCFD',
+    98: '#F9FAFB',
+    95: '#F1F3F4',
+    90: '#E2E4E7',
+    80: '#C6C9CD',
+    70: '#AAAFB4',
+    60: '#90959A',
+    50: '#767C81',
+    40: '#5E6368',
+    35: '#52585C',
+    30: '#464C51',
+    25: '#3B4045',
+    20: '#30353A',
+    15: '#25292E',
+    10: '#1A1E23',
+    5: '#101317',
     0: '#000000',
   },
 

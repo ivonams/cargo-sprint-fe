@@ -16,9 +16,9 @@ The color system is based on the Sprint Design System with a comprehensive multi
 - **Error (Red):** Error states and destructive actions
 - **Info (Blue):** Informational messages and tooltips
 - **Success (Green):** Success states and confirmations
-- **Warning:** Cautionary states and alerts
-- **Neutral:** Text, backgrounds, and structural elements
-- **Neutral Variants:** Subtle backgrounds and dividers
+- **Warning (Orange/Amber):** Cautionary states and alerts
+- **Neutral (Grays):** Text, backgrounds, and structural elements
+- **Neutral Variants:** Subtle backgrounds and dividers with green tint
 
 **Primary Color Scale (Teal/Cyan):**
 - primary-100 → primary-0: #FFFFFF → #000000
@@ -36,9 +36,21 @@ The color system is based on the Sprint Design System with a comprehensive multi
 - success-100 → success-0: #FFFFFF → #000000
 - Key token: success-50 (#21893B)
 
+**Warning Color Scale (Orange/Amber):**
+- warning-100 → warning-0: #FFFFFF → #000000
+- Key token: warning-50 (#BF5F17)
+
 **Info Color Scale (Blue):**
 - info-100 → info-0: #FFFFFF → #000000
 - Key token: info-50 (#2872E2)
+
+**Neutral Color Scale (Grays):**
+- neutral-100 → neutral-0: #FFFFFF → #000000
+- Usage: Text, backgrounds, structural UI
+
+**Neutral Variants Color Scale:**
+- neutralVariants-100 → neutralVariants-0: #FFFFFF → #000000
+- Usage: Subtle backgrounds and dividers with green tint
 
 **Semantic Token Mapping:**
 
@@ -48,7 +60,7 @@ The color system is based on the Sprint Design System with a comprehensive multi
 - Foreground: 187 100% 12% (#00363D)
 - Success: 130 63% 33% (#21893B)
 - Error: 3 78% 52% (#DE3730)
-- Warning: 162 100% 53% (#02C38D)
+- Warning: 26 78% 42% (#BF5F17)
 - Info: 218 72% 53% (#2872E2)
 
 **Dark Mode:**
@@ -57,7 +69,7 @@ The color system is based on the Sprint Design System with a comprehensive multi
 - Foreground: 189 96% 90% (#9FEFFD)
 - Success: 130 67% 48% (#41A452)
 - Error: 3 78% 59% (#FF5449)
-- Warning: 162 98% 44% (#00A576)
+- Warning: 28 93% 64% (#F99748)
 - Info: 218 100% 59% (#4D8EFF)
 
 **Color Guidelines:**
