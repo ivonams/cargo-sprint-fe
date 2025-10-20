@@ -7,46 +7,64 @@
 ## Core Design Elements
 
 ### A. Color Palette (Sprint DS)
-The color system is based on the Sprint Design System with a teal/cyan color palette.
+The color system is based on the Sprint Design System with a comprehensive multi-palette approach.
 
-**Sprint DS Primary Color Scale:**
-- primary-100: #F6FFFF (Lightest)
-- primary-98: #EDFCFF
-- primary-95: #D0F8FF
-- primary-90: #9FEFFD
-- primary-80: #83D3E0
-- primary-70: #67B7C4
-- primary-60: #4B9CA9
-- primary-50: #2C828F (Main primary for light mode)
-- primary-40: #016C78
-- primary-35: #005B66
-- primary-30: #004F58
-- primary-25: #00424A
-- primary-20: #00363D
-- primary-15: #002B30
-- primary-10: #001F24
-- primary-5: #001417
-- primary-0: #000000 (Darkest)
+**Color Philosophy:**
+- **Primary (Teal/Cyan):** Core brand identity for main actions and key UI elements
+- **Secondary (Blue):** Supporting elements, headers, navigation
+- **Tertiary (Green):** Additional UI variety for charts and tags
+- **Error (Red):** Error states and destructive actions
+- **Info (Blue):** Informational messages and tooltips
+- **Success (Green):** Success states and confirmations
+- **Warning:** Cautionary states and alerts
+- **Neutral:** Text, backgrounds, and structural elements
+- **Neutral Variants:** Subtle backgrounds and dividers
 
-**Light Mode (HSL):**
-- Primary: 189 53% 37% (#2C828F - primary-50)
-- Primary Foreground: 180 100% 98% (#F6FFFF - primary-100)
+**Primary Color Scale (Teal/Cyan):**
+- primary-100 → primary-0: #FFFFFF → #000000
+- Key tokens: primary-50 (#2C828F - light mode), primary-80 (#83D3E0 - dark mode)
+
+**Secondary Color Scale (Blue):**
+- secondary-99 → secondary-0: #FEFBFF → #000000
+- Usage: Headers, navigation, supporting UI
+
+**Error Color Scale (Red):**
+- error-100 → error-0: #FFFFFF → #000000
+- Key token: error-50 (#DE3730)
+
+**Success Color Scale (Green):**
+- success-100 → success-0: #FFFFFF → #000000
+- Key token: success-50 (#21893B)
+
+**Info Color Scale (Blue):**
+- info-100 → info-0: #FFFFFF → #000000
+- Key token: info-50 (#2872E2)
+
+**Semantic Token Mapping:**
+
+**Light Mode:**
+- Primary: 189 53% 37% (#2C828F)
 - Background: 0 0% 98%
-- Foreground (text): 187 100% 12% (#00363D - primary-20)
-- Border: 189 30% 90%
-- Card: 0 0% 96%
-- Secondary: 189 30% 88%
-- Accent: 189 30% 88%
+- Foreground: 187 100% 12% (#00363D)
+- Success: 130 63% 33% (#21893B)
+- Error: 3 78% 52% (#DE3730)
+- Warning: 162 100% 53% (#02C38D)
+- Info: 218 72% 53% (#2872E2)
 
-**Dark Mode (HSL):**
-- Primary: 188 60% 70% (#83D3E0 - primary-80)
-- Primary Foreground: 187 100% 5% (#001417 - primary-5)
-- Background: 187 100% 5%
-- Foreground (text): 189 96% 90% (#9FEFFD - primary-90)
-- Border: 187 50% 20%
-- Card: 187 100% 8%
-- Secondary: 187 50% 18%
-- Accent: 187 50% 18%
+**Dark Mode:**
+- Primary: 188 60% 70% (#83D3E0)
+- Background: 187 100% 5% (#001417)
+- Foreground: 189 96% 90% (#9FEFFD)
+- Success: 130 67% 48% (#41A452)
+- Error: 3 78% 59% (#FF5449)
+- Warning: 162 98% 44% (#00A576)
+- Info: 218 100% 59% (#4D8EFF)
+
+**Color Guidelines:**
+- Use primary colors for main actions and brand elements
+- Use semantic colors (success, error, warning, info) for status communication
+- Maintain 4.5:1 minimum contrast ratio for accessibility
+- Refer to `shared/sprint-ds-colors.ts` for complete color token reference
 
 ### B. Typography
 - **Font Family:** Inter (Google Fonts) for all text

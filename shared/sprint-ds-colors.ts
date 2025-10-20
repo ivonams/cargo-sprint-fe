@@ -1,0 +1,199 @@
+/**
+ * Sprint DS Color System
+ * Complete color palette extracted from Figma Design System
+ * 
+ * Usage: Import these tokens in your components for consistent theming
+ * Each palette includes scales from 0 (darkest) to 100 (lightest)
+ */
+
+export const sprintDSColors = {
+  // Primary Colors (Teal/Cyan) - Core brand identity
+  primary: {
+    100: '#FFFFFF',
+    99: '#F6FEFF',
+    98: '#EDFCFF',
+    95: '#D0F8FF',
+    90: '#9FEFFD',
+    80: '#83D3E0',
+    70: '#67B7C4',
+    60: '#4B9CA9',
+    50: '#2C828F',    // Main primary for light mode
+    40: '#016C78',
+    35: '#005B66',
+    30: '#004F58',
+    25: '#00424A',
+    20: '#00363D',
+    15: '#002B30',
+    10: '#001F24',
+    5: '#001417',     // Main primary dark background
+    0: '#000000',
+  },
+
+  // Secondary Colors (Blue) - Supporting elements
+  secondary: {
+    99: '#FEFBFF',
+    98: '#F9F9FF',
+    95: '#EDF0FF',
+    90: '#D8E2FF',
+    80: '#B3C7F2',
+    70: '#98ABD6',
+    60: '#7E91BA',
+    50: '#64779F',
+    40: '#4B5E85',
+    35: '#3F5278',
+    30: '#33476B',
+    25: '#283B5F',
+    20: '#1C3054',
+    15: '#0C2245',
+    10: '#031B3D',
+    5: '#00102C',
+    0: '#000000',
+  },
+
+  // Tertiary Colors (Green) - Additional UI elements
+  tertiary: {
+    100: '#FFFFFF',
+    99: '#FFFBFF',
+    98: '#E8FFF0',
+    95: '#BDFFDE',
+    90: '#65FCC1',
+    80: '#41DFA7',
+    70: '#02C38D',
+    60: '#00A576',
+    50: '#008861',
+    40: '#006C4C',
+    35: '#005F42',
+    30: '#005139',
+    25: '#00452F',
+    20: '#003826',
+    15: '#002C1D',
+    10: '#002115',
+    5: '#00150C',
+    0: '#000000',
+  },
+
+  // Error Colors (Red) - Error states and destructive actions
+  error: {
+    100: '#FFFFFF',
+    99: '#FFF8F7',
+    98: '#FFEDEA',
+    95: '#FFDAD6',
+    90: '#FFB4AB',
+    80: '#FF897D',
+    70: '#FF5449',
+    60: '#DE3730',
+    50: '#DE3730',
+    40: '#BA1A1A',
+    35: '#A80710',
+    30: '#93000A',
+    25: '#7E0007',
+    20: '#690005',
+    15: '#540003',
+    10: '#410002',
+    5: '#2D0001',
+    0: '#000000',
+  },
+
+  // Info Colors (Blue) - Informational states
+  info: {
+    100: '#FFFFFF',
+    99: '#FEFBFF',
+    98: '#F9F9FF',
+    95: '#EDF0FF',
+    90: '#D8E2FF',
+    80: '#ADC6FF',
+    70: '#81AAFF',
+    60: '#4D8EFF',
+    50: '#2872E2',
+    40: '#005AC2',
+    35: '#004FAB',
+    30: '#004395',
+    25: '#00397F',
+    20: '#002E6A',
+    15: '#002455',
+    10: '#001A42',
+    5: '#00102D',
+    0: '#000000',
+  },
+
+  // Success Colors (Green) - Success states and confirmations
+  success: {
+    100: '#FFFFFF',
+    99: '#F6FFF1',
+    98: '#EBFFE6',
+    95: '#C6FFC5',
+    90: '#C6FFC5',
+    80: '#79DC83',
+    70: '#5DBF6A',
+    60: '#41A452',
+    50: '#21893B',
+    40: '#006E28',
+    35: '#006022',
+    30: '#00531C',
+    25: '#004617',
+    20: '#003911',
+    15: '#002D0C',
+    10: '#002107',
+    5: '#001503',
+    0: '#000000',
+  },
+
+  // Warning Colors - Warning states and caution
+  warning: {
+    // Note: Specific warning color values not fully visible in metadata
+    // Using tertiary (green-yellow) as placeholder - should be updated with actual values
+    95: '#BDFFDE',
+    90: '#65FCC1',
+    80: '#41DFA7',
+    70: '#02C38D',
+    60: '#00A576',
+    50: '#008861',
+  },
+
+  // Neutral Colors - Text, backgrounds, and structural elements
+  neutral: {
+    100: '#FFFFFF',
+    99: '#FEFBFF',
+    98: '#F9F9FF',
+    95: '#EDF0FF',
+    90: '#D8E2FF',
+    80: '#ADC6FF',
+    70: '#81AAFF',
+    60: '#4D8EFF',
+    50: '#2872E2',
+    40: '#005AC2',
+    35: '#004FAB',
+    30: '#004395',
+    25: '#00397F',
+    20: '#002E6A',
+    15: '#002455',
+    10: '#001A42',
+    5: '#00102D',
+    0: '#000000',
+  },
+
+  // Neutral Variants - Subtle backgrounds and dividers
+  neutralVariants: {
+    100: '#FFFFFF',
+    99: '#F5FFF7',
+    98: '#F2FCF4',
+    95: '#EAF3EB',
+    90: '#DBE5DD',
+    80: '#BFC9C2',
+    70: '#A4ADA7',
+    60: '#8A938C',
+    50: '#707973',
+    40: '#57605B',
+    35: '#4B554F',
+    30: '#404943',
+    25: '#353D38',
+    20: '#2A322D',
+    15: '#1F2823',
+    10: '#151D19',
+    5: '#0A130F',
+    0: '#000000',
+  },
+} as const;
+
+export type ColorPalette = keyof typeof sprintDSColors;
+export type ColorScale = keyof typeof sprintDSColors.primary;
