@@ -312,6 +312,24 @@
  * need to be distinguished from eachother visually.
  */
 @layer utilities {
+  /* Typography emphasis utilities - Sprint DS */
+  .text-display-lg-em,
+  .text-display-md-em,
+  .text-display-sm-em,
+  .text-headline-lg-em,
+  .text-headline-md-em,
+  .text-headline-sm-em,
+  .text-title-lg-em,
+  .text-title-md-em,
+  .text-title-sm-em,
+  .text-body-lg-em,
+  .text-body-md-em,
+  .text-body-sm-em,
+  .text-label-lg-em,
+  .text-label-md-em,
+  .text-label-sm-em {
+    font-weight: 500;
+  }
 
   /* Hide ugly search cancel button in Chrome until we can style it properly */
   input[type="search"]::-webkit-search-cancel-button {

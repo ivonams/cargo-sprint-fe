@@ -39,6 +39,15 @@ This project follows best practices from several guideline documents:
 - Color tokens defined in `shared/sprint-ds-colors.ts`
 - Semantic tokens (success, warning, info, error) configured in `index.css` with automatic dark/light mode support
 - All colors available as Tailwind utilities via `tailwind.config.ts`
+- **Typography System**: Comprehensive type scale using Lato for Display/Headline text and Roboto for Title/Body/Label text following Material Design 3 guidelines
+  - Display (Lato): Large (57px), Medium (45px), Small (36px)
+  - Headline (Lato): Large (32px), Medium (28px), Small (24px)
+  - Title (Roboto): Large (22px), Medium (16px), Small (14px)
+  - Body (Roboto): Large (16px), Medium (14px), Small (12px)
+  - Label (Roboto): Large (14px), Medium (12px), Small (11px)
+  - Each scale includes regular (400 weight) and emphasized (500 weight) variants
+  - Typography utilities available via Tailwind classes: `text-display-lg`, `text-headline-md-em`, `text-body-lg`, etc.
+  - Font families: `font-display` (Lato), `font-sans` (Roboto)
 - Comprehensive documentation in `design_guidelines.md`
 
 **Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All Sprint DS colors automatically adapt to the selected theme.
