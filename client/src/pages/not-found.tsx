@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AlertCircle, Home } from "lucide-react";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
@@ -19,7 +19,7 @@ export default function NotFound() {
 
           <div className="mt-6">
             <Button asChild data-testid="button-home">
-              <Link href="/" className="inline-flex items-center gap-2">
+              <Link to="/" className="inline-flex items-center gap-2">
                 <Home className="h-4 w-4" />
                 Back to Home
               </Link>
