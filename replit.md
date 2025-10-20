@@ -23,7 +23,7 @@ This project follows best practices from several guideline documents:
 
 **Build System - Vite**: Vite serves as the build tool and development server, providing fast hot module replacement (HMR) and optimized production builds. The frontend is configured to build to `dist/public`.
 
-**Routing - Wouter**: Implements client-side routing using Wouter, a lightweight alternative to React Router. Routes are defined in `App.tsx` with a simple Switch/Route pattern.
+**Routing - React Router**: Implements client-side routing using React Router DOM. Routes are defined in `App.tsx` with BrowserRouter, Routes, and Route components.
 
 **State Management - TanStack Query**: Uses TanStack Query (React Query) for server state management, with custom query functions configured for API communication including credential-based requests.
 
