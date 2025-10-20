@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Plus, Download, Settings } from "lucide-react";
 
 export default function Playground() {
   return (
@@ -104,10 +105,86 @@ export default function Playground() {
         </section>
 
         <section>
-          <h2 className="text-headline-md-em font-display text-foreground mb-6">Button Example</h2>
-          <Button data-testid="button-example">
-            example button
-          </Button>
+          <h2 className="text-headline-md-em font-display text-foreground mb-6">Buttons</h2>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-title-md-em text-foreground mb-4">Primary (Default Variant)</h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="default" data-testid="button-primary">
+                  <Plus />
+                  Button
+                </Button>
+                <Button variant="default" data-testid="button-primary-text-only">
+                  Button
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-title-md-em text-foreground mb-4">Secondary (Outline Variant)</h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="outline" data-testid="button-secondary">
+                  <Download />
+                  Button
+                </Button>
+                <Button variant="outline" data-testid="button-secondary-text-only">
+                  Button
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-title-md-em text-foreground mb-4">Tertiary (Ghost Variant)</h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="ghost" data-testid="button-tertiary">
+                  <Settings />
+                  Button
+                </Button>
+                <Button variant="ghost" data-testid="button-tertiary-text-only">
+                  Button
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-title-md-em text-foreground mb-4">Sizes</h3>
+              <div className="flex flex-wrap items-center gap-4">
+                <Button size="sm" data-testid="button-size-sm">
+                  <Plus />
+                  Small
+                </Button>
+                <Button size="default" data-testid="button-size-default">
+                  <Plus />
+                  Default
+                </Button>
+                <Button size="lg" data-testid="button-size-lg">
+                  <Plus />
+                  Large
+                </Button>
+                <Button size="icon" data-testid="button-size-icon">
+                  <Plus />
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-title-md-em text-foreground mb-4">Disabled State</h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="default" disabled data-testid="button-disabled-primary">
+                  <Plus />
+                  Disabled
+                </Button>
+                <Button variant="outline" disabled data-testid="button-disabled-secondary">
+                  <Download />
+                  Disabled
+                </Button>
+                <Button variant="ghost" disabled data-testid="button-disabled-tertiary">
+                  <Settings />
+                  Disabled
+                </Button>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
