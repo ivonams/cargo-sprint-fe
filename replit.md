@@ -8,6 +8,13 @@ This is a full-stack React TypeScript boilerplate application built with modern 
 
 Preferred communication style: Simple, everyday language.
 
+## Development Guidelines
+
+This project follows best practices from several guideline documents:
+
+- **bulletproof-react-guidelines.md**: Comprehensive React development patterns covering project structure, component design, state management, API layer, performance, security, error handling, and testing strategies. Reference this file when building new features or refactoring existing code.
+- **design_guidelines.md**: Visual design system including colors, typography, spacing, and component styling. Reference this file when implementing UI components.
+
 ## System Architecture
 
 ### Frontend Architecture
