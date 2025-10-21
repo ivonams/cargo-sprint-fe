@@ -24,7 +24,7 @@ export default function Home() {
             data-testid="button-playground"
           >
             <Link to="/playground" className="inline-flex items-center gap-2">
-              Check design system
+              Check out the design system
               <Rocket className="h-4 w-4" />
             </Link>
           </Button>
