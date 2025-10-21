@@ -218,20 +218,18 @@ export default function Playground() {
             <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Badges</h2>
               <p className="text-body-md text-muted-foreground mb-6">
-                Small status indicators for displaying counts, labels, and tags.
+                Small status indicators with soft pastel backgrounds.
               </p>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Variants</h3>
+                  <h3 className="text-title-md-em text-foreground mb-4">All Variants</h3>
                   <div className="flex flex-wrap items-center gap-3">
-                    <Badge variant="default">Default</Badge>
-                    <Badge variant="secondary">Secondary</Badge>
-                    <Badge variant="success">Success</Badge>
-                    <Badge variant="warning">Warning</Badge>
-                    <Badge variant="error">Error</Badge>
-                    <Badge variant="info">Info</Badge>
-                    <Badge variant="outline">Outline</Badge>
+                    <Badge variant="info">Label</Badge>
+                    <Badge variant="error">Label</Badge>
+                    <Badge variant="neutral">Label</Badge>
+                    <Badge variant="success">Label</Badge>
+                    <Badge variant="outline">Label</Badge>
                   </div>
                 </div>
 
@@ -241,12 +239,12 @@ export default function Playground() {
                     <div className="flex flex-wrap items-center gap-3">
                       <span className="text-body-md">Status:</span>
                       <Badge variant="success">Active</Badge>
-                      <Badge variant="warning">Pending</Badge>
                       <Badge variant="error">Failed</Badge>
+                      <Badge variant="neutral">Pending</Badge>
                     </div>
                     <div className="flex flex-wrap items-center gap-3">
                       <span className="text-body-md">Notifications:</span>
-                      <Badge variant="default">5</Badge>
+                      <Badge variant="info">5</Badge>
                       <Badge variant="info">99+</Badge>
                     </div>
                   </div>
