@@ -48,6 +48,18 @@ This project follows best practices from several guideline documents:
   - Each scale includes regular (400 weight) and emphasized (500 weight) variants
   - Typography utilities available via Tailwind classes: `text-display-lg`, `text-headline-md-em`, `text-body-lg`, etc.
   - Font families: `font-display` (Lato), `font-sans` (Roboto)
+- **Spacing System**: Material Design 3 compliant spacing scale based on 8px baseline grid
+  - Base unit: 8px (space-2) for consistent visual rhythm
+  - Standard scale: 0px, 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px, 56px, 64px, 72px, 80px, 96px, 128px...
+  - Touch target minimum: 48x48px (space-12) for interactive elements
+  - Minimum spacing between touch targets: 8px (space-2)
+  - Common use cases:
+    - Component padding: `space-2` (tight), `space-4` (default), `space-6` (relaxed), `space-8` (loose)
+    - Element gaps: `space-1` (tight), `space-2` (default), `space-4` (relaxed), `space-6` (loose)
+    - Section spacing: `space-6` (compact), `space-8` (default), `space-10` (relaxed), `space-12` (loose)
+    - Screen margins: Mobile `space-4` (16px), Tablet `space-6` (24px), Desktop `space-8` (32px)
+  - Spacing tokens defined in `shared/sprint-ds-spacing.ts`
+  - Available as Tailwind utilities: `p-4`, `m-6`, `gap-2`, `space-x-4`, etc.
 - **Branding Components**: Theme-aware logo components extracted from Figma
   - `CargoSprintLogo`: Full horizontal logo (symbol + text) with size variants (sm, md, lg, xl)
   - `CargoSprintSymbol`: Icon-only version for favicons and compact displays

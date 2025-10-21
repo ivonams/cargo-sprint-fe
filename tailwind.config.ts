@@ -6,6 +6,43 @@ export default {
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        // Material Design 3 Spacing System (8px baseline grid)
+        // Standard scale values for consistent spacing across the design system
+        0: '0px',          // 0x - No spacing
+        0.5: '2px',        // 0.25x - Micro spacing
+        1: '4px',          // 0.5x - Very tight spacing
+        2: '8px',          // 1x - Small spacing (base unit)
+        3: '12px',         // 1.5x - Between elements
+        4: '16px',         // 2x - Default margins/padding
+        5: '20px',         // 2.5x - Medium spacing
+        6: '24px',         // 3x - Section spacing
+        7: '28px',         // 3.5x - Large spacing
+        8: '32px',         // 4x - Large spacing
+        9: '36px',         // 4.5x - Extra spacing
+        10: '40px',        // 5x - Extra large spacing
+        11: '44px',        // 5.5x - Touch target sizing
+        12: '48px',        // 6x - Minimum touch target
+        14: '56px',        // 7x - Large touch target
+        16: '64px',        // 8x - Extra large spacing
+        18: '72px',        // 9x - Content margins
+        20: '80px',        // 10x - Major sections
+        24: '96px',        // 12x - Large sections
+        26: '104px',       // 13x - Large content padding
+        28: '112px',       // 14x - Extra large sections
+        32: '128px',       // 16x - Massive spacing
+        36: '144px',       // 18x - Hero sections
+        40: '160px',       // 20x - Extra large sections
+        44: '176px',       // 22x - Massive sections
+        48: '192px',       // 24x - Full screen spacing
+        52: '208px',       // 26x - Ultra-wide spacing
+        56: '224px',       // 28x - Maximum spacing
+        60: '240px',       // 30x - Ultra spacing
+        64: '256px',       // 32x - Extreme spacing
+        72: '288px',       // 36x - Maximum vertical spacing
+        80: '320px',       // 40x - Ultra-wide sections
+        96: '384px',       // 48x - Full viewport spacing
+      },
       borderRadius: {
         lg: ".5625rem", /* 9px */
         md: ".375rem", /* 6px */
