@@ -13,7 +13,7 @@ export default function Home() {
             <CargoSprintLogo size="xl" />
           </div>
           <p className="text-lg text-primary/80" data-testid="text-hero-subtitle">
-            We're just getting started. The real magic is coming soon.
+            This is the first step—bigger things are on the way.
           </p>
         </div>
 
