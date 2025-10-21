@@ -78,6 +78,42 @@ The color system is based on the CargoSprint Design System with a comprehensive 
 - Maintain 4.5:1 minimum contrast ratio for accessibility
 - Refer to `shared/sprint-ds-colors.ts` for complete color token reference
 
+**Using CargoSprint DS Color Scales:**
+
+All color palettes are available with full scales from 0 (darkest) to 100 (lightest). You can use these colors with Tailwind utilities:
+
+```jsx
+// Background colors
+<div className="bg-primary-50">Primary 50</div>
+<div className="bg-secondary-40">Secondary 40</div>
+<div className="bg-success-80">Success 80</div>
+
+// Text colors
+<p className="text-primary-40">Primary text</p>
+<p className="text-error-50">Error text</p>
+
+// Border colors
+<div className="border border-primary-60">Bordered element</div>
+
+// With opacity
+<div className="bg-primary-50/50">50% opacity</div>
+<div className="text-success-40/75">75% opacity</div>
+```
+
+**Available Color Scales:**
+- `primary-{0-100}` - Teal/Cyan palette for brand identity
+- `secondary-{0-100}` - Blue palette for supporting elements
+- `tertiary-{0-100}` - Green palette for additional UI variety
+- `error-{0-100}` - Red palette for errors and destructive actions
+- `success-{0-100}` - Green palette for success states
+- `warning-{0-100}` - Orange/Amber palette for warnings
+- `info-{0-100}` - Blue palette for informational content
+- `neutral-{0-100}` - Gray palette for text and backgrounds
+- `neutral-variant-{0-100}` - Green-tinted grays for subtle backgrounds
+
+**Semantic Tokens:**
+For most use cases, use semantic tokens (`bg-primary`, `text-foreground`, `bg-success`) which automatically adapt to light/dark mode. Use the numbered scales when you need specific shades that differ from the semantic defaults.
+
 ### B. Typography (CargoSprint DS)
 
 The typography system uses two font families following Material Design 3 guidelines:

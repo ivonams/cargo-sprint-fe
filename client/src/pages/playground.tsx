@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Plus, Download, Settings } from "lucide-react";
+import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 
 export default function Playground() {
   return (
@@ -22,6 +23,9 @@ export default function Playground() {
             </TabsTrigger>
             <TabsTrigger value="buttons" data-testid="tab-buttons">
               Buttons
+            </TabsTrigger>
+            <TabsTrigger value="colors" data-testid="tab-colors">
+              Colors
             </TabsTrigger>
           </TabsList>
 
@@ -201,8 +205,141 @@ export default function Playground() {
               </div>
             </section>
           </TabsContent>
+
+          <TabsContent value="colors" className="space-y-8 mt-8" data-testid="tab-content-colors">
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Color Palettes</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                CargoSprint DS provides complete color scales from 0 (darkest) to 100 (lightest) for all palettes.
+                Use utilities like <code className="text-label-sm bg-muted px-2 py-1 rounded">bg-primary-50</code> or <code className="text-label-sm bg-muted px-2 py-1 rounded">text-success-40</code>.
+              </p>
+            </section>
+
+            <ColorPalette
+              name="Primary"
+              description="Teal/Cyan - Core brand identity"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="primary"
+            />
+
+            <ColorPalette
+              name="Secondary"
+              description="Blue - Supporting elements"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="secondary"
+            />
+
+            <ColorPalette
+              name="Tertiary"
+              description="Green - Additional UI elements"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="tertiary"
+            />
+
+            <ColorPalette
+              name="Error"
+              description="Red - Error states and destructive actions"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="error"
+            />
+
+            <ColorPalette
+              name="Success"
+              description="Green - Success states and confirmations"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="success"
+            />
+
+            <ColorPalette
+              name="Warning"
+              description="Orange/Amber - Warning states and caution"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="warning"
+            />
+
+            <ColorPalette
+              name="Info"
+              description="Blue - Informational states"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="info"
+            />
+
+            <ColorPalette
+              name="Neutral"
+              description="Grays - Text, backgrounds, and structural elements"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="neutral"
+            />
+
+            <ColorPalette
+              name="Neutral Variant"
+              description="Subtle backgrounds and dividers"
+              scales={[100, 99, 98, 95, 90, 80, 70, 60, 50, 40, 35, 30, 25, 20, 15, 10, 5, 0]}
+              colorClass="neutral-variant"
+            />
+          </TabsContent>
         </Tabs>
       </div>
     </div>
+  );
+}
+
+function ColorPalette({ name, description, scales, colorClass }: {
+  name: string;
+  description: string;
+  scales: number[];
+  colorClass: string;
+}) {
+  const getColorValue = (scale: number): string => {
+    const paletteMap: Record<string, keyof typeof sprintDSColorsHSL> = {
+      'primary': 'primary',
+      'secondary': 'secondary',
+      'tertiary': 'tertiary',
+      'error': 'error',
+      'success': 'success',
+      'warning': 'warning',
+      'info': 'info',
+      'neutral': 'neutral',
+      'neutral-variant': 'neutralVariants',
+    };
+    
+    const palette = paletteMap[colorClass];
+    if (!palette) return '0 0% 50%';
+    
+    return sprintDSColorsHSL[palette][scale as keyof typeof sprintDSColorsHSL.primary];
+  };
+
+  return (
+    <section>
+      <h3 className="text-title-lg-em text-foreground mb-2">{name}</h3>
+      <p className="text-body-sm text-muted-foreground mb-4">{description}</p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+        {scales.map((scale) => {
+          const hslValue = getColorValue(scale);
+          const isLight = scale >= 90;
+          
+          return (
+            <div
+              key={scale}
+              className="flex flex-col items-center"
+              data-testid={`color-${colorClass}-${scale}`}
+            >
+              <div
+                className="w-16 h-16 rounded-md border border-border mb-2"
+                style={{
+                  backgroundColor: `hsl(${hslValue})`,
+                }}
+              />
+              <span className={`text-label-sm font-medium ${isLight ? 'text-foreground' : 'text-muted-foreground'}`}>
+                {scale}
+              </span>
+              <code className="text-label-sm text-muted-foreground">
+                {colorClass}-{scale}
+              </code>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }

@@ -77,6 +77,7 @@ export default {
         },
         tertiary: {
           // CargoSprint DS Tertiary Color Scale (Green)
+          // Note: Tertiary doesn't have semantic tokens in index.css, these are direct palette colors
           0: `hsl(${sprintDSColorsHSL.tertiary[0]} / <alpha-value>)`,
           5: `hsl(${sprintDSColorsHSL.tertiary[5]} / <alpha-value>)`,
           10: `hsl(${sprintDSColorsHSL.tertiary[10]} / <alpha-value>)`,
@@ -113,6 +114,7 @@ export default {
         },
         error: {
           // CargoSprint DS Error Color Scale (Red)
+          // Note: Error doesn't have semantic tokens in index.css, these are direct palette colors
           0: `hsl(${sprintDSColorsHSL.error[0]} / <alpha-value>)`,
           5: `hsl(${sprintDSColorsHSL.error[5]} / <alpha-value>)`,
           10: `hsl(${sprintDSColorsHSL.error[10]} / <alpha-value>)`,
