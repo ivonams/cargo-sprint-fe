@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Plus, Download, Settings } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
+import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 
 export default function Playground() {
   return (
@@ -26,6 +27,9 @@ export default function Playground() {
             </TabsTrigger>
             <TabsTrigger value="buttons" data-testid="tab-buttons">
               Buttons
+            </TabsTrigger>
+            <TabsTrigger value="branding" data-testid="tab-branding">
+              Branding
             </TabsTrigger>
           </TabsList>
 
@@ -200,6 +204,86 @@ export default function Playground() {
                       <Settings />
                       Disabled
                     </Button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </TabsContent>
+
+          <TabsContent value="branding" className="space-y-12 mt-8" data-testid="tab-content-branding">
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">CargoSprint Branding</h2>
+              <p className="text-body-md text-muted-foreground mb-8">
+                Theme-aware branding components that automatically adapt to light and dark modes.
+              </p>
+              
+              <div className="space-y-12">
+                <div>
+                  <h3 className="text-title-lg-em text-foreground mb-6">Main Logo</h3>
+                  <div className="flex flex-wrap items-center gap-8">
+                    <div className="space-y-2">
+                      <CargoSprintLogo size="xl" data-testid="branding-cargosprint-xl" />
+                      <p className="text-label-sm text-muted-foreground">Extra Large</p>
+                    </div>
+                    <div className="space-y-2">
+                      <CargoSprintLogo size="lg" data-testid="branding-cargosprint-lg" />
+                      <p className="text-label-sm text-muted-foreground">Large</p>
+                    </div>
+                    <div className="space-y-2">
+                      <CargoSprintLogo size="md" data-testid="branding-cargosprint-md" />
+                      <p className="text-label-sm text-muted-foreground">Medium</p>
+                    </div>
+                    <div className="space-y-2">
+                      <CargoSprintLogo size="sm" data-testid="branding-cargosprint-sm" />
+                      <p className="text-label-sm text-muted-foreground">Small</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-lg-em text-foreground mb-6">Symbol / Icon</h3>
+                  <div className="flex flex-wrap items-center gap-8">
+                    <div className="space-y-2">
+                      <CargoSprintSymbol size="xl" data-testid="branding-symbol-xl" />
+                      <p className="text-label-sm text-muted-foreground">Extra Large</p>
+                    </div>
+                    <div className="space-y-2">
+                      <CargoSprintSymbol size="lg" data-testid="branding-symbol-lg" />
+                      <p className="text-label-sm text-muted-foreground">Large</p>
+                    </div>
+                    <div className="space-y-2">
+                      <CargoSprintSymbol size="md" data-testid="branding-symbol-md" />
+                      <p className="text-label-sm text-muted-foreground">Medium</p>
+                    </div>
+                    <div className="space-y-2">
+                      <CargoSprintSymbol size="sm" data-testid="branding-symbol-sm" />
+                      <p className="text-label-sm text-muted-foreground">Small</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-lg-em text-foreground mb-6">Product Logos</h3>
+                  <p className="text-body-sm text-muted-foreground mb-6">
+                    CargoSprint product family logos with automatic theme support.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <SprintPayLogo size="lg" data-testid="branding-sprintpay" />
+                      <p className="text-label-md text-muted-foreground">SprintPay</p>
+                    </div>
+                    <div className="space-y-3">
+                      <EModalLogo size="lg" data-testid="branding-emodal" />
+                      <p className="text-label-md text-muted-foreground">eModal</p>
+                    </div>
+                    <div className="space-y-3">
+                      <SprintPassLogo size="lg" data-testid="branding-sprintpass" />
+                      <p className="text-label-md text-muted-foreground">SprintPass</p>
+                    </div>
+                    <div className="space-y-3">
+                      <SprintPortLogo size="lg" data-testid="branding-sprintport" />
+                      <p className="text-label-md text-muted-foreground">SprintPort</p>
+                    </div>
                   </div>
                 </div>
               </div>
