@@ -216,50 +216,28 @@ export default function Playground() {
 
           <TabsContent value="badges" className="space-y-8 mt-8" data-testid="tab-content-badges">
             <section>
-              <h2 className="text-headline-md-em font-display text-foreground mb-4">Badge Variants</h2>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Badges</h2>
               <p className="text-body-md text-muted-foreground mb-6">
-                Status indicators using CargoSprint DS semantic colors. Badges are stadium-shaped (pill) components ideal for tags, counts, and status labels.
+                Small status indicators for displaying counts, labels, and tags.
               </p>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Solid Badges</h3>
+                  <h3 className="text-title-md-em text-foreground mb-4">Variants</h3>
                   <div className="flex flex-wrap items-center gap-3">
-                    <Badge variant="primary">Primary</Badge>
+                    <Badge variant="default">Default</Badge>
                     <Badge variant="secondary">Secondary</Badge>
                     <Badge variant="success">Success</Badge>
                     <Badge variant="warning">Warning</Badge>
                     <Badge variant="error">Error</Badge>
                     <Badge variant="info">Info</Badge>
-                    <Badge variant="neutral">Neutral</Badge>
+                    <Badge variant="outline">Outline</Badge>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Outline Badges</h3>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <Badge variant="primary-outline">Primary</Badge>
-                    <Badge variant="secondary-outline">Secondary</Badge>
-                    <Badge variant="success-outline">Success</Badge>
-                    <Badge variant="warning-outline">Warning</Badge>
-                    <Badge variant="error-outline">Error</Badge>
-                    <Badge variant="info-outline">Info</Badge>
-                    <Badge variant="neutral-outline">Neutral</Badge>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Badge Sizes</h3>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <Badge size="sm" variant="primary">Small</Badge>
-                    <Badge size="md" variant="primary">Medium</Badge>
-                    <Badge size="lg" variant="primary">Large</Badge>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Usage Examples</h3>
-                  <div className="space-y-4">
+                  <h3 className="text-title-md-em text-foreground mb-4">Examples</h3>
+                  <div className="space-y-3">
                     <div className="flex flex-wrap items-center gap-3">
                       <span className="text-body-md">Status:</span>
                       <Badge variant="success">Active</Badge>
@@ -267,16 +245,9 @@ export default function Playground() {
                       <Badge variant="error">Failed</Badge>
                     </div>
                     <div className="flex flex-wrap items-center gap-3">
-                      <span className="text-body-md">Counts:</span>
-                      <Badge variant="primary">24</Badge>
+                      <span className="text-body-md">Notifications:</span>
+                      <Badge variant="default">5</Badge>
                       <Badge variant="info">99+</Badge>
-                      <Badge variant="neutral">5</Badge>
-                    </div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="text-body-md">Tags:</span>
-                      <Badge variant="secondary-outline">React</Badge>
-                      <Badge variant="primary-outline">TypeScript</Badge>
-                      <Badge variant="success-outline">Verified</Badge>
                     </div>
                   </div>
                 </div>
