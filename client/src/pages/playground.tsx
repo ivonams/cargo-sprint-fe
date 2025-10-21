@@ -8,10 +8,10 @@ export default function Playground() {
       <div className="max-w-6xl mx-auto space-y-8">
         <div>
           <h1 className="text-headline-lg-em font-display text-foreground mb-2" data-testid="text-playground-heading">
-            Sprint DS Component Showcase
+            CargoSprint DS Component Showcase
           </h1>
           <p className="text-body-lg text-muted-foreground">
-            A comprehensive showcase of Sprint DS typography system and components.
+            A comprehensive showcase of CargoSprint DS typography system and components.
           </p>
         </div>
 

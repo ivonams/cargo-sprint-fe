@@ -33,7 +33,7 @@ This project follows best practices from several guideline documents:
 - CSS variables for theming support (light/dark mode)
 - Material Design principles with modern minimalism aesthetic
 
-**Design System - Sprint DS**: 
+**Design System - CargoSprint DS**: 
 - Complete color system with 10 palettes: Primary (Teal/Cyan), Secondary (Blue), Tertiary (Green), Error (Red), Info (Blue), Success (Green), Warning (Orange/Amber), Neutral (Grays), and Neutral Variants
 - Each palette includes full 0-100 scales for granular control
 - Color tokens defined in `shared/sprint-ds-colors.ts`
@@ -50,7 +50,7 @@ This project follows best practices from several guideline documents:
   - Font families: `font-display` (Lato), `font-sans` (Roboto)
 - Comprehensive documentation in `design_guidelines.md`
 
-**Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All Sprint DS colors automatically adapt to the selected theme.
+**Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All CargoSprint DS colors automatically adapt to the selected theme.
 
 ### Backend Architecture
 

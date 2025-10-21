@@ -6,8 +6,8 @@
 
 ## Core Design Elements
 
-### A. Color Palette (Sprint DS)
-The color system is based on the Sprint Design System with a comprehensive multi-palette approach.
+### A. Color Palette (CargoSprint DS)
+The color system is based on the CargoSprint Design System with a comprehensive multi-palette approach.
 
 **Color Philosophy:**
 - **Primary (Teal/Cyan):** Core brand identity for main actions and key UI elements
@@ -78,7 +78,7 @@ The color system is based on the Sprint Design System with a comprehensive multi
 - Maintain 4.5:1 minimum contrast ratio for accessibility
 - Refer to `shared/sprint-ds-colors.ts` for complete color token reference
 
-### B. Typography (Sprint DS)
+### B. Typography (CargoSprint DS)
 
 The typography system uses two font families following Material Design 3 guidelines:
 

@@ -1,5 +1,5 @@
 /**
- * Sprint DS Color System
+ * CargoSprint DS Color System
  * Complete color palette extracted from Figma Design System
  * 
  * Usage: Import these tokens in your components for consistent theming
