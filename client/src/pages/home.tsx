@@ -21,10 +21,10 @@ export default function Home() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent" data-testid="text-hero-heading">
+          <h1 className="text-5xl font-bold text-primary" data-testid="text-hero-heading">
             Hello World
           </h1>
-          <p className="text-lg text-muted-foreground" data-testid="text-hero-subtitle">
+          <p className="text-lg text-primary/80" data-testid="text-hero-subtitle">
             A simple React TypeScript boilerplate app
           </p>
         </div>
@@ -32,20 +32,20 @@ export default function Home() {
         <div className="space-y-3 text-left max-w-md mx-auto">
           <div className="flex items-start gap-3" data-testid="text-instruction-start">
             <div className="h-2 w-2 rounded-full bg-primary mt-2" data-testid="marker-dot-start" />
-            <p className="text-sm text-foreground">
-              Get started: <code className="px-2 py-1 bg-muted rounded text-xs font-mono" data-testid="text-command-dev">npm run dev</code>
+            <p className="text-sm text-primary/70">
+              Get started: <code className="px-2 py-1 bg-primary/5 text-primary rounded text-xs font-mono" data-testid="text-command-dev">npm run dev</code>
             </p>
           </div>
           <div className="flex items-start gap-3" data-testid="text-instruction-edit">
             <div className="h-2 w-2 rounded-full bg-primary mt-2" data-testid="marker-dot-edit" />
-            <p className="text-sm text-foreground">
-              Edit: <code className="px-2 py-1 bg-muted rounded text-xs font-mono" data-testid="text-command-edit">client/src/pages/home.tsx</code>
+            <p className="text-sm text-primary/70">
+              Edit: <code className="px-2 py-1 bg-primary/5 text-primary rounded text-xs font-mono" data-testid="text-command-edit">client/src/pages/home.tsx</code>
             </p>
           </div>
           <div className="flex items-start gap-3" data-testid="text-instruction-build">
             <div className="h-2 w-2 rounded-full bg-primary mt-2" data-testid="marker-dot-build" />
-            <p className="text-sm text-foreground">
-              Build: <code className="px-2 py-1 bg-muted rounded text-xs font-mono" data-testid="text-command-build">npm run build</code>
+            <p className="text-sm text-primary/70">
+              Build: <code className="px-2 py-1 bg-primary/5 text-primary rounded text-xs font-mono" data-testid="text-command-build">npm run build</code>
             </p>
           </div>
         </div>
