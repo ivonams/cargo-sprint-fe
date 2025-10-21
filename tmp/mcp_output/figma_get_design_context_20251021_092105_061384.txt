@@ -1,0 +1,2077 @@
+<mcp_external_output>
+
+### Content Block 1 (Text)
+const img3DIllustrationPenPuttingBlueTicksPaper1 = "https://www.figma.com/api/mcp/asset/926d774b-b7b3-49d6-8258-929af6cb0d28";
+const img = "https://www.figma.com/api/mcp/asset/b8424b4a-12b6-40c7-9a7c-d775ff1f2a36";
+const img1 = "https://www.figma.com/api/mcp/asset/060a515b-c968-4b6e-84ce-271846586964";
+
+export default function Typography() {
+  return (
+    <div className="bg-white relative size-full" data-name="Typography" data-node-id="4131:1733">
+      <div className="absolute bg-[rgba(255,255,255,0.8)] box-border content-stretch flex flex-col gap-[8px] items-start justify-center left-[calc(50%+-0.5px)] overflow-clip p-[10px] rounded-[4px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] top-[42px] translate-x-[-50%]" data-node-id="4131:2386">
+        <div className="h-[24px] overflow-clip relative shrink-0 w-[146px]" data-name="blue/CargoSprint-Horizontal" data-node-id="5115:4577">
+          <div className="absolute inset-[0.46%_85.05%_7.27%_0.05%]" data-name="Group" data-node-id="I5115:4577;4009:711">
+            <img alt="" className="block max-w-none size-full" src={img} />
+          </div>
+          <div className="absolute inset-[6.97%_0.05%_0.3%_19.36%]" data-name="Group" data-node-id="I5115:4577;4009:714">
+            <img alt="" className="block max-w-none size-full" src={img1} />
+          </div>
+        </div>
+        <div className="border-[var(--neutarl\/neutral95,#eff1ed)] border-b-0 border-l-0 border-r-0 border-solid border-t relative shrink-0" data-node-id="4131:2388">
+          <div className="box-border content-stretch flex gap-[10px] items-start overflow-clip pb-0 pt-[10px] px-[10px] relative rounded-[inherit]">
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2389">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2389;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2389;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Branding</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2390">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2390;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2390;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Colors</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[var(--prymary\/primary98,#edfcff)] content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="4131:2391">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2391;2522:11827">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2391;2522:11828" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Typography</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2392">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2392;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2392;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Grid System</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2393">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2393;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2393;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Icons</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2394">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2394;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2394;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Button System</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2395">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2395;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2395;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Spacing</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2396">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2396;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2396;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Form</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2397">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2397;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2397;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Navigation</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2398">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2398;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2398;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">Modal</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] h-[40px] items-center justify-center min-w-[93px] relative shrink-0" data-name="Button" data-node-id="4131:2399">
+              <div className="box-border content-stretch flex items-start pl-[6px] pr-[8px] py-[4px] relative shrink-0" data-name="Text" data-node-id="I4131:2399;2522:11786">
+                <div className="flex flex-col font-['Roboto:Medium',_sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-[var(--primary,#005b66)] tracking-[0.25px] whitespace-nowrap" data-node-id="I4131:2399;2522:11787" style={{ fontVariationSettings: "'wdth' 100" }}>
+                  <p className="leading-[20px]">{`Alert `}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-white h-[266px] left-[110px] overflow-clip rounded-[24px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] top-[303px] w-[1221px]" data-node-id="4131:1734">
+        <p className="absolute font-['Roboto:Medium',_sans-serif] font-medium leading-[24px] left-[10.48%] right-[4.18%] text-[16px] text-[var(--dark-colors\/charcoal,#212121)] top-[127px] tracking-[0.5px] whitespace-pre-wrap" data-node-id="4131:1735" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Typography plays a crucial role in establishing a clear visual hierarchy, enhancing readability, and reinforcing brand identity. In alignment with Material Design 3, our typography system is structured around five key categories: Display, Headline, Title, Body, and Label styles. Each category serves a specific purpose in the interface, ensuring consistency and accessibility across all platforms.
+        </p>
+      </div>
+      <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-[7.64%] right-[50.14%] text-[0px] text-[16px] text-[var(--dark-colors\/charcoal,#212121)] top-[728px] tracking-[0.5px]" data-node-id="4143:554" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Purpose:
+        </span>
+        <span>
+          {` Used for short, impactful text such as hero sections or splash screens.`}
+          <br aria-hidden="true" />
+        </span>
+        <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Characteristics:
+        </span>
+        <span>
+          {` Large font sizes, minimal tracking, and high visual prominence.`}
+          <br aria-hidden="true" />
+        </span>
+        <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Usage:
+        </span>
+        <span>{` Ideal for drawing attention to key messages or branding moments.`}</span>
+      </p>
+      <p className="absolute font-['Lato:Bold',_sans-serif] leading-[normal] left-[82px] not-italic text-[200px] text-[var(--neutarl\/neutral90,#e1e3df)] top-[207px] tracking-[-3px]" data-node-id="4131:1736">
+        03
+      </p>
+      <p className="absolute font-['Arial:Regular',_sans-serif] leading-[normal] left-[197px] not-italic text-[78px] text-[var(--primary,#005b66)] top-[303px] tracking-[-1.17px]" data-node-id="4131:1737">
+        Typography
+      </p>
+      <div className="absolute bg-white h-[199px] left-[137px] overflow-clip rounded-[24px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] top-[3749px] w-[1108px]" data-node-id="4131:1739">
+        <ul className="absolute block font-['Roboto:Medium',_sans-serif] font-medium leading-[0] left-[45px] text-[16px] text-[var(--neutarl\/neutral0,#000000)] top-[29px] tracking-[0.5px] whitespace-nowrap whitespace-pre-wrap" data-node-id="4131:1740" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <li className="mb-0 ms-[24px]">
+            <span className="leading-[29px]">{`Use Lato for all Display and Headline  to maintain visual hierarchy.`}</span>
+          </li>
+          <li className="mb-0 ms-[24px]">
+            <span className="leading-[29px]">Use Roboto for all body, title and label text, paragraphs, and UI components.</span>
+          </li>
+          <li className="mb-0 ms-[24px]">
+            <span className="leading-[29px]">Maintain a type scale that follows the Material Design 3 guidelines for readability.</span>
+          </li>
+          <li className="mb-0 ms-[24px]">
+            <span className="leading-[29px]">Use Medium weights sparingly for emphasis.</span>
+          </li>
+          <li className="ms-[24px]">
+            <span className="leading-[29px]">Maintain consistent alignment patterns throughout the interface.</span>
+          </li>
+        </ul>
+      </div>
+      <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[137px] not-italic text-[32px] text-[var(--primary,#005b66)] top-[3658px]" data-node-id="4131:1741">
+        Color Guidelines
+      </p>
+      <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[110px] not-italic text-[32px] text-[var(--primary,#005b66)] top-[669px]" data-node-id="4131:1742">
+        Display (Lato)
+      </p>
+      <p className="absolute font-['Roboto:Medium',_sans-serif] font-medium leading-[20px] left-[137px] text-[14px] text-[var(--neutarl\/neutral40,#505350)] top-[3704px] tracking-[0.25px]" data-node-id="4131:1743" style={{ fontVariationSettings: "'wdth' 100" }}>
+        Best practices for using spacing in your interface
+      </p>
+      <div className="absolute h-[246px] left-[1043px] top-[3645px] w-[273px]" data-name="3d-illustration-pen-putting-blue-ticks-paper 1" data-node-id="4131:1744">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[107.45%] left-[-12.16%] max-w-none top-0 w-[129.37%]" src={img3DIllustrationPenPuttingBlueTicksPaper1} />
+        </div>
+      </div>
+      <div className="absolute contents left-[111px] top-[1875px]" data-node-id="4143:741">
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[111px] not-italic text-[32px] text-[var(--primary,#005b66)] top-[1875px]" data-node-id="4143:600">
+          Title (Roboto)
+        </p>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-[7.71%] right-[42.22%] text-[0px] text-[16px] text-[var(--dark-colors\/charcoal,#212121)] top-[1924px] tracking-[0.5px]" data-node-id="4143:601" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Purpose:
+          </span>
+          <span>
+            {` Used for medium-emphasis text like card titles, dialog titles, and section sub-headers.`}
+            <br aria-hidden="true" />
+          </span>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Characteristics:
+          </span>
+          <span>
+            {`  Balanced size and weight for clarity without overwhelming the layout.`}
+            <br aria-hidden="true" />
+          </span>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Usage:
+          </span>
+          <span>{` Supports content hierarchy and guides user focus.`}</span>
+        </p>
+      </div>
+      <div className="absolute contents left-[111px] top-[2430px]" data-node-id="4143:746">
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[111px] not-italic text-[32px] text-[var(--primary,#005b66)] top-[2430px]" data-node-id="4143:747">
+          Body (Roboto)
+        </p>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-[7.71%] right-[44.31%] text-[0px] text-[16px] text-[var(--dark-colors\/charcoal,#212121)] top-[2479px] tracking-[0.5px]" data-node-id="4143:748" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Purpose:
+          </span>
+          <span>
+            {` Used for the main content, including paragraphs, descriptions, and long-form text.`}
+            <br aria-hidden="true" />
+          </span>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>{`Characteristics: `}</span>
+          <span>
+            Optimized for readability with appropriate line height and spacing.
+            <br aria-hidden="true" />
+          </span>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Usage:
+          </span>
+          <span>{` Ensures comfortable reading across devices and screen sizes.`}</span>
+        </p>
+      </div>
+      <div className="absolute contents left-[111px] top-[2989px]" data-node-id="4143:786">
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[111px] not-italic text-[32px] text-[var(--primary,#005b66)] top-[2989px]" data-node-id="4143:787">
+          Label (Roboto)
+        </p>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-[7.71%] right-[42.71%] text-[0px] text-[16px] text-[var(--dark-colors\/charcoal,#212121)] top-[3038px] tracking-[0.5px]" data-node-id="4143:788" style={{ fontVariationSettings: "'wdth' 100" }}>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Purpose:
+          </span>
+          <span>
+            {` Used for captions, buttons, form labels, and other UI elements requiring concise text.`}
+            <br aria-hidden="true" />
+          </span>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Characteristics:
+          </span>
+          <span>
+            {` Compact and legible at small sizes.`}
+            <br aria-hidden="true" />
+          </span>
+          <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Usage:
+          </span>
+          <span>{` Supports user interaction and provides contextual information.`}</span>
+        </p>
+      </div>
+      <div className="absolute contents left-[111px] text-black top-[2596px]" data-node-id="4143:749">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[111px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[2628px] tracking-[0.1px] w-[411px]" data-node-id="4143:750">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:751" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              1
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:752" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:753" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .5
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-[111px] text-[16px] top-[2596px] tracking-[0.5px]" data-node-id="4143:754" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Body Large
+        </p>
+      </div>
+      <div className="absolute contents left-[111px] text-black top-[3155px] tracking-[0.1px]" data-node-id="4143:789">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[111px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[3183px] w-[422px]" data-node-id="4143:790">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:791" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              1
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:792" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:793" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .1
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[20px] left-[111px] text-[14px] top-[3155px]" data-node-id="4143:794" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Label Large
+        </p>
+      </div>
+      <div className="absolute contents left-[112px] text-black top-[2697px]" data-node-id="4143:755">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[112px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[2725px] tracking-[0.1px] w-[429px]" data-node-id="4143:756">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:757" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              1
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:758" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:759" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              5p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[20px] left-[112px] text-[14px] top-[2697px] tracking-[0.25px]" data-node-id="4143:760" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Body Medium
+        </p>
+      </div>
+      <div className="absolute contents left-[112px] text-black top-[3256px]" data-node-id="4143:795">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[112px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[3280px] tracking-[0.1px] w-[421px]" data-node-id="4143:796">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:797" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              1
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:798" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:799" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .5
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[16px] left-[112px] text-[12px] top-[3256px] tracking-[0.5px]" data-node-id="4143:800" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Label Medium
+        </p>
+      </div>
+      <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[640px] text-black top-[2596px]" data-node-id="4143:761">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[640px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[2628px] tracking-[0.1px] w-[422px]" data-node-id="4143:762">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:763" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:764" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:765" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .5p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute leading-[24px] left-[640px] text-[16px] top-[2596px] tracking-[0.5px]" data-node-id="4143:766" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Body Large Emphasized
+        </p>
+      </div>
+      <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[640px] text-black top-[3155px] tracking-[0.1px]" data-node-id="4143:801">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[640px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[3183px] w-[423px]" data-node-id="4143:802">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:803" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:804" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:805" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .1
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute leading-[20px] left-[640px] text-[14px] top-[3155px]" data-node-id="4143:806" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Label Large Emphasized
+        </p>
+      </div>
+      <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[640px] text-black top-[2697px]" data-node-id="4143:767">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[640px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[2725px] tracking-[0.1px] w-[422px]" data-node-id="4143:768">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:769" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:770" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:771" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              5p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute leading-[20px] left-[640px] text-[14px] top-[2697px] tracking-[0.25px]" data-node-id="4143:772" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Body Medium Emphasized
+        </p>
+      </div>
+      <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[640px] text-black top-[3256px]" data-node-id="4143:807">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[640px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[3280px] tracking-[0.1px] w-[423px]" data-node-id="4143:808">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:809" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:810" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:811" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .5
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute leading-[16px] left-[640px] text-[12px] top-[3256px] tracking-[0.5px]" data-node-id="4143:812" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Label Medium Emphasized
+        </p>
+      </div>
+      <div className="absolute contents left-[111px] text-black top-[2794px]" data-node-id="4143:773">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[111px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[2818px] tracking-[0.1px] w-[437px]" data-node-id="4143:774">
+          <p className="relative shrink-0 text-[14px]" data-node-id="4143:775" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto
+            </span>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[21px] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` Regular`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal leading-[21px] text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 12`}</span>
+            <span className="leading-[21px] text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:776" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 16`}</span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:777" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / -0.4px`}</span>
+          </p>
+        </div>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[16px] left-[111px] text-[12px] top-[2794px] tracking-[0.4px]" data-node-id="4143:778" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Title Small
+        </p>
+      </div>
+      <div className="absolute contents left-[111px] text-black top-[3353px]" data-node-id="4143:813">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[111px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[3377px] tracking-[0.1px] w-[422px]" data-node-id="4143:814">
+          <p className="relative shrink-0 text-[14px]" data-node-id="4143:815" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto
+            </span>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[21px] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` Regular`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal leading-[21px] text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 11`}</span>
+            <span className="leading-[21px] text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:816" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 16`}</span>
+            <span className="text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:817" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / -0.5px`}</span>
+          </p>
+        </div>
+        <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[16px] left-[111px] text-[11px] top-[3353px] tracking-[0.5px]" data-node-id="4143:818" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Label Small
+        </p>
+      </div>
+      <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[640px] text-black top-[2794px]" data-node-id="4143:779">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[640px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[2818px] tracking-[0.1px] w-[422px]" data-node-id="4143:780">
+          <p className="relative shrink-0 text-[14px]" data-node-id="4143:781" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto
+            </span>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[21px] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal leading-[21px] text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 12`}</span>
+            <span className="leading-[21px] text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:782" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 16`}</span>
+            <span className="text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:783" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / -0.4px`}</span>
+          </p>
+        </div>
+        <p className="absolute leading-[16px] left-[640px] text-[12px] top-[2794px] tracking-[0.4px]" data-node-id="4143:784" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Title Small Emphasized
+        </p>
+      </div>
+      <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[640px] text-black top-[3353px]" data-node-id="4143:819">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[640px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[3377px] tracking-[0.1px] w-[423px]" data-node-id="4143:820">
+          <p className="relative shrink-0 text-[14px]" data-node-id="4143:821" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Roboto
+            </span>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[21px] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal leading-[21px] text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 11`}</span>
+            <span className="leading-[21px] text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:822" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 16`}</span>
+            <span className="text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+          </p>
+          <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:823" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / -0.5px`}</span>
+          </p>
+        </div>
+        <p className="absolute leading-[16px] left-[640px] text-[11px] top-[3353px] tracking-[0.5px]" data-node-id="4143:824" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Label Small Emphasized
+        </p>
+      </div>
+      <div className="absolute contents left-[110px] top-[1119px]" data-node-id="4143:637">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[110px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1171px] tracking-[0.1px] w-[399px]" data-node-id="4143:629">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:630" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:631" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 4`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:632" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <div className="absolute contents left-[110px] top-[1119px]" data-node-id="4143:634">
+          <p className="absolute font-['Lato:Regular',_sans-serif] leading-[44px] left-[110px] not-italic text-[36px] text-black top-[1119px]" data-node-id="4143:635">
+            Display Small
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[639px] text-black top-[995px]" data-node-id="4143:646">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[639px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[1055px] tracking-[0.1px] w-[399px]" data-node-id="4143:559">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:560" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 4`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              5
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:561" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 5`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:562" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[52px] left-[639px] not-italic text-[45px] top-[995px]" data-node-id="4143:644">
+          Display Medium Emphasized
+        </p>
+      </div>
+      <div className="absolute contents left-[639px] text-black top-[1117px]" data-node-id="4143:652">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[639px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[1169px] tracking-[0.1px] w-[399px]" data-node-id="4143:653">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:654" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:655" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 4`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:656" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[44px] left-[639px] not-italic text-[36px] top-[1117px]" data-node-id="4143:657">
+          Display Small Emphasized
+        </p>
+      </div>
+      <div className="absolute contents left-[110px] text-black top-[849px]" data-node-id="4143:663">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[110px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[921px] tracking-[0.1px] w-[399px]" data-node-id="4142:543">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4142:544" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              57
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4142:546" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4142:548" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              5p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Lato:Regular',_sans-serif] leading-[64px] left-[110px] not-italic text-[57px] top-[849px] tracking-[-0.25px]" data-node-id="4143:659">
+          Display Large
+        </p>
+      </div>
+      <div className="absolute contents left-[639px] text-black top-[849px]" data-node-id="4143:664">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[639px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[921px] tracking-[0.1px] w-[414px]" data-node-id="4142:550">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4142:551" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              57
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4142:552" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4142:553" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              -
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              .
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              5p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[64px] left-[639px] not-italic text-[57px] top-[849px] tracking-[-0.25px]" data-node-id="4143:660">
+          Display Large Emphasized
+        </p>
+      </div>
+      <div className="absolute contents left-[110px] text-black top-[994px]" data-node-id="4143:665">
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[110px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[1054px] tracking-[0.1px] w-[399px]" data-node-id="4143:647">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:648" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 4`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              5
+            </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:649" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 5`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:650" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+        <p className="absolute font-['Lato:Regular',_sans-serif] leading-[52px] left-[110px] not-italic text-[45px] top-[994px]" data-node-id="4143:661">
+          Display Medium
+        </p>
+      </div>
+      <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[110px] not-italic text-[32px] text-[var(--primary,#005b66)] top-[1295px]" data-node-id="4135:533">
+        Headline (Lato)
+      </p>
+      <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-[7.64%] right-[42.57%] text-[0px] text-[16px] text-[var(--dark-colors\/charcoal,#212121)] top-[1344px] tracking-[0.5px] whitespace-pre-wrap" data-node-id="4143:598" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Purpose:
+        </span>
+        <span>
+          {` Used for prominent section headers and page titles.`}
+          <br aria-hidden="true" />
+        </span>
+        <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Characteristics:
+        </span>
+        <span>
+          {` Slightly smaller than display fonts but still bold and attention-grabbing.`}
+          <br aria-hidden="true" />
+        </span>
+        <span className="font-['Roboto:Medium',_sans-serif] font-medium" style={{ fontVariationSettings: "'wdth' 100" }}>
+          Usage:
+        </span>
+        <span>{` Helps users quickly scan and understand content structure.`}</span>
+      </p>
+      <div className="absolute contents left-[110px] top-[1472px]" data-node-id="4143:617">
+        <p className="absolute font-['Lato:Regular',_sans-serif] leading-[40px] left-[110px] not-italic text-[32px] text-black top-[1472px]" data-node-id="4135:534">
+          Headline Large
+        </p>
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[110px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1520px] tracking-[0.1px] w-[418px]" data-node-id="4143:571">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:572" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:573" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 4`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:574" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[639px] top-[1474px]" data-node-id="4143:616">
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[40px] left-[639px] not-italic text-[32px] text-black top-[1474px]" data-node-id="4135:535">
+          Headline Large Emphasized
+        </p>
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[639px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1520px] tracking-[0.1px] w-[399px]" data-node-id="4143:575">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:576" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>{`Lato Medium `}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:577" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 4`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:578" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="absolute h-[256px] left-[107px] overflow-clip top-[2042px] w-[955px]" data-node-id="4172:82">
+        <div className="absolute contents left-0 text-black top-[104px]" data-node-id="4143:673">
+          <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-0 overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[136px] tracking-[0.1px] w-[410px]" data-node-id="4143:674">
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:675" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Roboto Regular
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 1`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                6
+              </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:676" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Line height
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                4
+              </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:677" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Letter Spacing
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                0.15px
+              </span>
+            </p>
+          </div>
+          <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[24px] left-0 text-[16px] top-[104px] tracking-[0.15px] w-[95.952px] whitespace-pre-wrap" data-node-id="4143:678" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Title Medium
+          </p>
+        </div>
+        <div className="absolute contents left-0 text-black top-[-1px]" data-node-id="4143:666">
+          <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-0 overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[35px] tracking-[0.1px] w-[399px]" data-node-id="4143:602">
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:603" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Roboto Regular
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                2
+              </span>
+              <span className="text-[#5c5b5b]"> </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:604" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Line height
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                8
+              </span>
+              <span className="text-[#5c5b5b]"> </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:605" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Letter Spacing
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                0
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                p
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                x
+              </span>
+            </p>
+          </div>
+          <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[28px] left-0 text-[22px] top-[-1px]" data-node-id="4143:606" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Title Large
+          </p>
+        </div>
+        <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[533px] text-black top-[-1px]" data-node-id="4143:667">
+          <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[533px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[35px] tracking-[0.1px] w-[399px]" data-node-id="4143:668">
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:669" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Roboto Medium
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                2
+              </span>
+              <span className="text-[#5c5b5b]"> </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:670" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Line height
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                8
+              </span>
+              <span className="text-[#5c5b5b]"> </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:671" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Letter Spacing
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                0
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                p
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                x
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+            </p>
+          </div>
+          <p className="absolute leading-[28px] left-[533px] text-[22px] top-[-1px]" data-node-id="4143:672" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Title Large Emphasized
+          </p>
+        </div>
+        <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[533px] text-black top-[104px]" data-node-id="4143:679">
+          <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[533px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[136px] tracking-[0.1px] w-[422px]" data-node-id="4143:680">
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:681" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Roboto Medium
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                57
+              </span>
+              <span className="text-[#5c5b5b]"> </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:682" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Line height
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                6
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                4
+              </span>
+              <span className="text-[#5c5b5b]"> </span>
+            </p>
+            <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:683" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Letter Spacing
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                /
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                -
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                0
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                .
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                2
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                5p
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                x
+              </span>
+            </p>
+          </div>
+          <p className="absolute leading-[24px] left-[533px] text-[16px] top-[104px] tracking-[0.15px]" data-node-id="4143:684" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Title Medium Emphasized
+          </p>
+        </div>
+        <div className="absolute contents left-0 text-black top-[205px] tracking-[0.1px]" data-node-id="4143:685">
+          <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-0 overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[233px] w-[411px]" data-node-id="4143:686">
+            <p className="relative shrink-0 text-[14px]" data-node-id="4143:687" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Roboto
+              </span>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[21px] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` Regular`}</span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal leading-[21px] text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 14`}</span>
+              <span className="leading-[21px] text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+            </p>
+            <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:688" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Line height
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 20`}</span>
+              <span className="text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+            </p>
+            <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:689" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Letter Spacing
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / -0.1px`}</span>
+            </p>
+          </div>
+          <p className="absolute font-['Roboto:Regular',_sans-serif] font-normal leading-[20px] left-0 text-[14px] top-[205px]" data-node-id="4143:690" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Title Small
+          </p>
+        </div>
+        <div className="absolute contents font-['Roboto:Medium',_sans-serif] font-medium left-[533px] text-black top-[205px] tracking-[0.1px]" data-node-id="4143:691">
+          <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex gap-[10px] items-start leading-[0] left-[533px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] top-[233px] w-[411px]" data-node-id="4143:692">
+            <p className="relative shrink-0 text-[14px]" data-node-id="4143:693" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Roboto
+              </span>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[21px] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold leading-[20px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Medium
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal leading-[21px] text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 14`}</span>
+              <span className="leading-[21px] text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+            </p>
+            <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:694" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Line height
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 20`}</span>
+              <span className="text-[#5c5b5b] tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                {" "}
+              </span>
+            </p>
+            <p className="leading-[21px] relative shrink-0 text-[14px]" data-node-id="4143:695" style={{ fontVariationSettings: "'wdth' 100" }}>
+              <span className="font-['Roboto:Bold',_sans-serif] font-bold tracking-[0.1px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+                Letter Spacing
+              </span>
+              <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` / 0.1px`}</span>
+            </p>
+          </div>
+          <p className="absolute leading-[20px] left-[533px] text-[14px] top-[205px]" data-node-id="4143:696" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Title Small Emphasized
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[110px] top-[1589px]" data-node-id="4143:615">
+        <p className="absolute font-['Lato:Regular',_sans-serif] leading-[36px] left-[110px] not-italic text-[28px] text-black top-[1589px]" data-node-id="4135:536">
+          Headline Meduim
+        </p>
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[110px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1633px] tracking-[0.1px] w-[399px]" data-node-id="4143:579">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:580" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              8
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:581" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:582" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[639px] top-[1585px]" data-node-id="4143:612">
+        <p className="absolute font-['Lato:Medium',_sans-serif] leading-[36px] left-[639px] not-italic text-[28px] text-black top-[1585px]" data-node-id="4143:583">
+          Headline Medium Emphasized
+        </p>
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[639px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1629px] tracking-[0.1px] w-[399px]" data-node-id="4143:584">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:585" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              8
+            </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:586" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              3
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              6
+            </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:587" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[110px] top-[1698px]" data-node-id="4143:613">
+        <p className="absolute font-['Lato:Regular',_sans-serif] leading-[32px] left-[110px] not-italic text-[24px] text-black top-[1698px]" data-node-id="4135:537">
+          Headline Small
+        </p>
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[110px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1734px] tracking-[0.1px] w-[399px]" data-node-id="4143:589">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:590" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Regular
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:591" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:592" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`/ `}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[639px] top-[1694px]" data-node-id="4143:614">
+        <p className="absolute font-['Lato:Regular',_sans-serif] leading-[32px] left-[639px] not-italic text-[24px] text-black top-[1694px]" data-node-id="4143:607">
+          Headline Small Emphasized
+        </p>
+        <div className="absolute bg-[var(--dark-colors\/gray-5,#f7f7f7)] box-border content-stretch flex font-['Roboto:Medium',_sans-serif] font-medium gap-[10px] items-start leading-[0] left-[639px] overflow-clip px-[10px] py-[2px] rounded-[4px] text-[0px] text-black top-[1734px] tracking-[0.1px] w-[399px]" data-node-id="4143:608">
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:609" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Lato Medium
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 2`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              4
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:610" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Line height
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>{` 3`}</span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              2
+            </span>
+            <span className="text-[#5c5b5b]"> </span>
+          </p>
+          <p className="leading-[20px] relative shrink-0 text-[14px]" data-node-id="4143:611" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Roboto:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'wdth' 100" }}>
+              Letter Spacing
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              /
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              {" "}
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              0
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              p
+            </span>
+            <span className="font-['Roboto:Regular',_sans-serif] font-normal text-[#5c5b5b] tracking-[0.25px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+              x
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+### Content Block 2 (Text)
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+### Content Block 3 (Text)
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+### Content Block 4 (Text)
+These styles are contained in the design: Body/Body Large Emphasized: Font(family: "Roboto", style: Medium, size: 16, weight: 500, lineHeight: 24), Body/Body Large: Font(family: "Roboto", style: Regular, size: 16, weight: 400, lineHeight: 24), Headline/Headline Large Emphasized: Font(family: "Lato", style: Medium, size: 32, weight: 500, lineHeight: 40), Body/Body Medium Emphasized: Font(family: "Roboto", style: Medium, size: 14, weight: 500, lineHeight: 20), Title/Title Small Emphasized: Font(family: "Roboto", style: Medium, size: 14, weight: 500, lineHeight: 20), Label/Label Large: Font(family: "Roboto", style: Regular, size: 14, weight: 400, lineHeight: 20), Body/Body Medium: Font(family: "Roboto", style: Regular, size: 14, weight: 400, lineHeight: 20), Label/Label Medium: Font(family: "Roboto", style: Regular, size: 12, weight: 400, lineHeight: 16), Label/Label Large Emphasized: Font(family: "Roboto", style: Medium, size: 14, weight: 500, lineHeight: 20), Label/Label Medium Emphasized: Font(family: "Roboto", style: Medium, size: 12, weight: 500, lineHeight: 16), Body/Body Small: Font(family: "Roboto", style: Regular, size: 12, weight: 400, lineHeight: 16), Label/Label Small: Font(family: "Roboto", style: Regular, size: 11, weight: 400, lineHeight: 16), Body/Body Small Emphasized: Font(family: "Roboto", style: Medium, size: 12, weight: 500, lineHeight: 16), Label/Label Small Emphasized: Font(family: "Roboto", style: Medium, size: 11, weight: 500, lineHeight: 16), Display/Display Small: Font(family: "Lato", style: Regular, size: 36, weight: 400, lineHeight: 44), Display/Display Medium Emphasized: Font(family: "Lato", style: Medium, size: 45, weight: 500, lineHeight: 52), Display/Display Small Emphasized: Font(family: "Lato", style: Medium, size: 36, weight: 500, lineHeight: 44), Display/Display Large: Font(family: "Lato", style: Regular, size: 57, weight: 400, lineHeight: 64), Display/Display Large Emphasized: Font(family: "Lato", style: Medium, size: 57, weight: 500, lineHeight: 64), Display/Display Medium: Font(family: "Lato", style: Regular, size: 45, weight: 400, lineHeight: 52), Headline/Headline Large: Font(family: "Lato", style: Regular, size: 32, weight: 400, lineHeight: 40), Title/Title Medium: Font(family: "Roboto", style: Regular, size: 16, weight: 400, lineHeight: 24), Title/Title Large: Font(family: "Roboto", style: Regular, size: 22, weight: 400, lineHeight: 28), Title/Title Large Emphasized: Font(family: "Roboto", style: Medium, size: 22, weight: 500, lineHeight: 28), Title/Title Medium Emphasized: Font(family: "Roboto", style: Medium, size: 16, weight: 500, lineHeight: 24), Title/Title Small: Font(family: "Roboto", style: Regular, size: 14, weight: 400, lineHeight: 20), Headline/Headline Meduim: Font(family: "Lato", style: Regular, size: 28, weight: 400, lineHeight: 36), Headline/Headline Medium Emphasized: Font(family: "Lato", style: Medium, size: 28, weight: 500, lineHeight: 36), Headline/Headline Small: Font(family: "Lato", style: Regular, size: 24, weight: 400, lineHeight: 32).
+
+### Content Block 5 (Text)
+IMPORTANT: After you call this tool, you MUST call get_screenshot to get a screenshot of the node for context.
+
+</mcp_external_output>

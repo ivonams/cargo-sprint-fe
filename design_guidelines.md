@@ -140,14 +140,14 @@ The typography system uses two font families following Material Design 3 guideli
 - Title Small: 14px / 20px line-height, Regular (400) or Medium (500), 0.1px/-0.1px letter-spacing
 
 **Body (Roboto):**
-- Body Large: 16px / 24px line-height, Regular (400) or Medium (500), -0.5px letter-spacing
-- Body Medium: 14px / 20px line-height, Regular (400) or Medium (500), -0.25px letter-spacing
-- Body Small: 12px / 16px line-height, Regular (400) or Medium (500), -0.4px letter-spacing
+- Body Large: 16px / 24px line-height, Regular (400) or Medium (500), 0.5px letter-spacing
+- Body Medium: 14px / 20px line-height, Regular (400) or Medium (500), 0.25px letter-spacing
+- Body Small: 12px / 16px line-height, Regular (400) or Medium (500), 0.4px letter-spacing
 
 **Label (Roboto):**
-- Label Large: 14px / 20px line-height, Regular (400) or Medium (500), -0.1px letter-spacing
-- Label Medium: 12px / 16px line-height, Regular (400) or Medium (500), -0.5px letter-spacing
-- Label Small: 11px / 16px line-height, Regular (400) or Medium (500), -0.5px letter-spacing
+- Label Large: 14px / 20px line-height, Regular (400) or Medium (500), 0.1px letter-spacing
+- Label Medium: 12px / 16px line-height, Regular (400) or Medium (500), 0.5px letter-spacing
+- Label Small: 11px / 16px line-height, Regular (400) or Medium (500), 0.5px letter-spacing
 
 **Typography Guidelines:**
 - Use Medium weight (500) sparingly for emphasis
