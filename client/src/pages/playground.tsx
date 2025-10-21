@@ -1,23 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Plus, Download, Settings } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
-import { useState } from "react";
 
 export default function Playground() {
-  const [input1, setInput1] = useState("")
-  const [input2, setInput2] = useState("Input")
-  const [input3, setInput3] = useState("")
-  const [input4, setInput4] = useState("Input")
-  const [input5, setInput5] = useState("")
-  const [input6, setInput6] = useState("Input")
-  const [input7, setInput7] = useState("Input")
-  const [input8, setInput8] = useState("")
-  const [input9, setInput9] = useState("Input")
-  
   return (
     <div className="min-h-screen w-full bg-background p-8">
       <div className="max-w-6xl mx-auto space-y-8">
@@ -43,9 +31,6 @@ export default function Playground() {
             </TabsTrigger>
             <TabsTrigger value="badges" data-testid="tab-badges">
               Badges
-            </TabsTrigger>
-            <TabsTrigger value="inputs" data-testid="tab-inputs">
-              Inputs
             </TabsTrigger>
             <TabsTrigger value="branding" data-testid="tab-branding">
               Branding
@@ -263,120 +248,6 @@ export default function Playground() {
                       <Badge variant="info">99+</Badge>
                     </div>
                   </div>
-                </div>
-              </div>
-            </section>
-          </TabsContent>
-
-          <TabsContent value="inputs" className="space-y-8 mt-8" data-testid="tab-content-inputs">
-            <section>
-              <h2 className="text-headline-md-em font-display text-foreground mb-4">Input Fields</h2>
-              <p className="text-body-md text-muted-foreground mb-6">
-                Text input fields with floating labels, icons, and various states.
-              </p>
-
-              <div className="max-w-md space-y-12">
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Default (Not Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input1}
-                    onChange={(e) => setInput1(e.target.value)}
-                    onClear={() => setInput1("")}
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Default (Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input2}
-                    onChange={(e) => setInput2(e.target.value)}
-                    onClear={() => setInput2("")}
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Hovered (Not Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input3}
-                    onChange={(e) => setInput3(e.target.value)}
-                    onClear={() => setInput3("")}
-                    className="hover:border-neutral-60"
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Hovered (Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input4}
-                    onChange={(e) => setInput4(e.target.value)}
-                    onClear={() => setInput4("")}
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Focused (Not Filled)</h3>
-                  <Input
-                    supportingText="Supporting text"
-                    placeholder="Input"
-                    value={input5}
-                    onChange={(e) => setInput5(e.target.value)}
-                    onClear={() => setInput5("")}
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Focused (Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input6}
-                    onChange={(e) => setInput6(e.target.value)}
-                    onClear={() => setInput6("")}
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Error (Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input7}
-                    onChange={(e) => setInput7(e.target.value)}
-                    onClear={() => setInput7("")}
-                    error
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Disabled (Not Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input8}
-                    onChange={(e) => setInput8(e.target.value)}
-                    onClear={() => setInput8("")}
-                    disabled
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-title-sm-em text-foreground mb-3">Disabled (Filled)</h3>
-                  <Input
-                    label="Label"
-                    supportingText="Supporting text"
-                    value={input9}
-                    onChange={(e) => setInput9(e.target.value)}
-                    onClear={() => setInput9("")}
-                    disabled
-                  />
                 </div>
               </div>
             </section>
