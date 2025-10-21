@@ -1,14 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Plus, Download, Settings } from "lucide-react";
+import { Plus, Download, Settings, ArrowLeft } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
+import { Link } from "react-router-dom";
 
 export default function Playground() {
   return (
     <div className="min-h-screen w-full bg-background p-8">
       <div className="max-w-6xl mx-auto space-y-8">
+        <Button
+          variant="ghost"
+          asChild
+          className="mb-4"
+          data-testid="button-back"
+        >
+          <Link to="/" className="inline-flex items-center gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Home
+          </Link>
+        </Button>
+        
         <div>
           <h1 className="text-headline-lg-em font-display text-foreground mb-2" data-testid="text-playground-heading">
             CargoSprint DS Component Showcase
