@@ -48,6 +48,12 @@ This project follows best practices from several guideline documents:
   - Each scale includes regular (400 weight) and emphasized (500 weight) variants
   - Typography utilities available via Tailwind classes: `text-display-lg`, `text-headline-md-em`, `text-body-lg`, etc.
   - Font families: `font-display` (Lato), `font-sans` (Roboto)
+- **Branding Components**: Theme-aware logo components extracted from Figma
+  - `CargoSprintLogo`: Full horizontal logo (symbol + text) with size variants (sm, md, lg, xl)
+  - `CargoSprintSymbol`: Icon-only version for favicons and compact displays
+  - Both components automatically adapt colors for light mode (#005B66 primary) and dark mode (white)
+  - Located in `client/src/components/branding/`
+  - Exported through barrel file for easy imports: `import { CargoSprintLogo } from "@/components/branding"`
 - Comprehensive documentation in `design_guidelines.md`
 
 **Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All CargoSprint DS colors automatically adapt to the selected theme.
