@@ -16,16 +16,16 @@ export default function Playground() {
           </p>
         </div>
 
-        <Tabs defaultValue="typography" className="w-full">
+        <Tabs defaultValue="colors" className="w-full">
           <TabsList data-testid="tabs-list">
+            <TabsTrigger value="colors" data-testid="tab-colors">
+              Colors
+            </TabsTrigger>
             <TabsTrigger value="typography" data-testid="tab-typography">
               Typography
             </TabsTrigger>
             <TabsTrigger value="buttons" data-testid="tab-buttons">
               Buttons
-            </TabsTrigger>
-            <TabsTrigger value="colors" data-testid="tab-colors">
-              Colors
             </TabsTrigger>
           </TabsList>
 
