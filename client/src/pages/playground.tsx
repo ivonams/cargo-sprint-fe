@@ -275,7 +275,7 @@ export default function Playground() {
                 Text input fields with floating labels, icons, and various states.
               </p>
 
-              <div className="max-w-md space-y-6">
+              <div className="max-w-md space-y-12">
                 <div>
                   <h3 className="text-title-sm-em text-foreground mb-3">Default (Not Filled)</h3>
                   <Input
