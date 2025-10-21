@@ -51,9 +51,11 @@ This project follows best practices from several guideline documents:
 - **Branding Components**: Theme-aware logo components extracted from Figma
   - `CargoSprintLogo`: Full horizontal logo (symbol + text) with size variants (sm, md, lg, xl)
   - `CargoSprintSymbol`: Icon-only version for favicons and compact displays
-  - Both components automatically adapt colors for light mode (#005B66 primary) and dark mode (white)
+  - **Product Logos**: SprintPay, eModal, SprintPass, SprintPort with theme support
+  - All components automatically adapt colors for light mode (blue #005B66) and dark mode (white)
   - Located in `client/src/components/branding/`
-  - Exported through barrel file for easy imports: `import { CargoSprintLogo } from "@/components/branding"`
+  - Exported through barrel file for easy imports: `import { CargoSprintLogo, SprintPayLogo } from "@/components/branding"`
+  - Showcased in playground page branding tab at `/playground`
 - Comprehensive documentation in `design_guidelines.md`
 
 **Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All CargoSprint DS colors automatically adapt to the selected theme.
