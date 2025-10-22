@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Plus, Download, Settings, ArrowLeft } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Plus, Download, Settings, ArrowLeft, Terminal, AlertCircle, User } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 import { Link } from "react-router-dom";
@@ -44,6 +49,9 @@ export default function Playground() {
             </TabsTrigger>
             <TabsTrigger value="badges" data-testid="tab-badges">
               Badges
+            </TabsTrigger>
+            <TabsTrigger value="components" data-testid="tab-components">
+              Components
             </TabsTrigger>
             <TabsTrigger value="branding" data-testid="tab-branding">
               Branding
@@ -260,6 +268,175 @@ export default function Playground() {
                       <Badge variant="info">5</Badge>
                       <Badge variant="info">99+</Badge>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </TabsContent>
+
+          <TabsContent value="components" className="space-y-12 mt-8" data-testid="tab-content-components">
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Accordion</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A collapsible component to organize content in expandable sections.
+              </p>
+              <div className="max-w-2xl">
+                <Accordion type="single" collapsible className="w-full" data-testid="component-accordion">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                    <AccordionContent>
+                      Yes. It adheres to the WAI-ARIA design pattern and uses semantic HTML.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>Is it styled?</AccordionTrigger>
+                    <AccordionContent>
+                      Yes. It comes with default styles that can be customized to match your design system.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>Is it animated?</AccordionTrigger>
+                    <AccordionContent>
+                      Yes. It includes smooth animations for opening and closing content sections.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Alert Dialog</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A modal dialog that interrupts the user with important content and expects a response.
+              </p>
+              <div>
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <Button variant="outline" data-testid="component-alert-dialog-trigger">Show Alert Dialog</Button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent data-testid="component-alert-dialog-content">
+                    <AlertDialogHeader>
+                      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        This action cannot be undone. This will permanently delete your account
+                        and remove your data from our servers.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Cancel</AlertDialogCancel>
+                      <AlertDialogAction>Continue</AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Alert</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Displays a callout for user attention with different variants for various message types.
+              </p>
+              <div className="space-y-4 max-w-2xl">
+                <Alert data-testid="component-alert-default">
+                  <Terminal className="h-4 w-4" />
+                  <AlertTitle>Heads up!</AlertTitle>
+                  <AlertDescription>
+                    You can add components to your app using the cli.
+                  </AlertDescription>
+                </Alert>
+                
+                <Alert variant="destructive" data-testid="component-alert-destructive">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertTitle>Error</AlertTitle>
+                  <AlertDescription>
+                    Your session has expired. Please log in again.
+                  </AlertDescription>
+                </Alert>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Aspect Ratio</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Maintains a consistent aspect ratio for responsive media content.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+                <div>
+                  <h3 className="text-title-sm-em text-foreground mb-3">16:9 (Video)</h3>
+                  <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg" data-testid="component-aspect-ratio-16-9">
+                    <div className="flex items-center justify-center h-full text-muted-foreground text-body-md">
+                      16:9 Aspect Ratio
+                    </div>
+                  </AspectRatio>
+                </div>
+                <div>
+                  <h3 className="text-title-sm-em text-foreground mb-3">1:1 (Square)</h3>
+                  <AspectRatio ratio={1} className="bg-muted rounded-lg" data-testid="component-aspect-ratio-1-1">
+                    <div className="flex items-center justify-center h-full text-muted-foreground text-body-md">
+                      1:1 Aspect Ratio
+                    </div>
+                  </AspectRatio>
+                </div>
+                <div>
+                  <h3 className="text-title-sm-em text-foreground mb-3">4:3 (Standard)</h3>
+                  <AspectRatio ratio={4 / 3} className="bg-muted rounded-lg" data-testid="component-aspect-ratio-4-3">
+                    <div className="flex items-center justify-center h-full text-muted-foreground text-body-md">
+                      4:3 Aspect Ratio
+                    </div>
+                  </AspectRatio>
+                </div>
+                <div>
+                  <h3 className="text-title-sm-em text-foreground mb-3">21:9 (Ultrawide)</h3>
+                  <AspectRatio ratio={21 / 9} className="bg-muted rounded-lg" data-testid="component-aspect-ratio-21-9">
+                    <div className="flex items-center justify-center h-full text-muted-foreground text-body-md">
+                      21:9 Aspect Ratio
+                    </div>
+                  </AspectRatio>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Avatar</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Displays user profile pictures or initials in a circular container.
+              </p>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">With Image</h3>
+                  <div className="flex items-center gap-4">
+                    <Avatar data-testid="component-avatar-image">
+                      <AvatarImage src="https://github.com/shadcn.png" alt="User" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                    <Avatar className="h-12 w-12">
+                      <AvatarImage src="https://github.com/shadcn.png" alt="User" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                    <Avatar className="h-16 w-16">
+                      <AvatarImage src="https://github.com/shadcn.png" alt="User" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">With Fallback</h3>
+                  <div className="flex items-center gap-4">
+                    <Avatar data-testid="component-avatar-fallback">
+                      <AvatarFallback>
+                        <User className="h-4 w-4" />
+                      </AvatarFallback>
+                    </Avatar>
+                    <Avatar>
+                      <AvatarFallback>JD</AvatarFallback>
+                    </Avatar>
+                    <Avatar>
+                      <AvatarFallback>AB</AvatarFallback>
+                    </Avatar>
+                    <Avatar>
+                      <AvatarFallback className="bg-primary-90 text-primary-10">CS</AvatarFallback>
+                    </Avatar>
                   </div>
                 </div>
               </div>
