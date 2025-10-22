@@ -8,10 +8,64 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Avatar, AvatarGroup } from "@/components/ui/avatar";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Calendar } from "@/components/ui/calendar";
 import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check } from "lucide-react";
+import { useState } from "react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 import { Link } from "react-router-dom";
+
+function CalendarDemo() {
+  const [date, setDate] = useState<Date | undefined>(new Date());
+  
+  return (
+    <div className="flex flex-col gap-4">
+      <Calendar
+        mode="single"
+        selected={date}
+        onSelect={setDate}
+        className="rounded-md border"
+        data-testid="component-calendar-single"
+      />
+      {date && (
+        <p className="text-body-sm text-muted-foreground">
+          Selected: {date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+      )}
+    </div>
+  );
+}
+
+function CalendarRangeDemo() {
+  const [dateRange, setDateRange] = useState<{ from?: Date; to?: Date }>({
+    from: new Date(),
+    to: undefined
+  });
+  
+  return (
+    <div className="flex flex-col gap-4">
+      <Calendar
+        mode="range"
+        selected={dateRange}
+        onSelect={(range) => setDateRange(range || { from: undefined, to: undefined })}
+        className="rounded-md border"
+        numberOfMonths={2}
+        data-testid="component-calendar-range"
+      />
+      {dateRange?.from && (
+        <p className="text-body-sm text-muted-foreground">
+          {dateRange.to ? (
+            <>
+              From: {dateRange.from.toLocaleDateString()} - To: {dateRange.to.toLocaleDateString()}
+            </>
+          ) : (
+            <>From: {dateRange.from.toLocaleDateString()}</>
+          )}
+        </p>
+      )}
+    </div>
+  );
+}
 
 export default function Playground() {
   return (
@@ -619,6 +673,24 @@ export default function Playground() {
                       Disabled
                     </Button>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Calendar</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A date picker component for selecting dates with a visual calendar interface.
+              </p>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Single Date Selection</h3>
+                  <CalendarDemo />
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Date Range Selection</h3>
+                  <CalendarRangeDemo />
                 </div>
               </div>
             </section>
