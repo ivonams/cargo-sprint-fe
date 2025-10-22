@@ -92,6 +92,9 @@ This project follows best practices from several guideline documents:
     - Dropdown Menu: Compact menu for actions and navigation with separators and labels
     - Form: Form component with validation using React Hook Form and Zod schema validation
     - Hover Card: Popup card that displays additional information when hovering over an element
+    - Input: Standard text input component with email, password, and disabled state examples
+    - Input OTP: One-time password input with individual character slots and separator
+    - Label: Label component for form inputs with proper accessibility and htmlFor attributes
   - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 

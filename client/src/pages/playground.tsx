@@ -20,6 +20,7 @@ import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, Dr
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check, ChevronsUpDown, Calendar as CalendarIcon, User, Mail, Phone, MoreVertical, LogOut } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "@/components/ui/input-otp";
 import { Label } from "@/components/ui/label";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -1296,6 +1297,82 @@ export default function Playground() {
                     </div>
                   </HoverCardContent>
                 </HoverCard>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Input</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A standard text input component for capturing user data.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4 max-w-md w-full">
+                  <div className="space-y-2">
+                    <Label htmlFor="email-input">Email</Label>
+                    <Input id="email-input" type="email" placeholder="Enter your email" data-testid="component-input-email" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="password-input">Password</Label>
+                    <Input id="password-input" type="password" placeholder="Enter your password" data-testid="component-input-password" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="disabled-input">Disabled Input</Label>
+                    <Input id="disabled-input" placeholder="This input is disabled" disabled data-testid="component-input-disabled" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Input OTP</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                An input component for one-time passwords with individual character slots.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="otp-input">One-Time Password</Label>
+                    <InputOTP maxLength={6} id="otp-input" data-testid="component-input-otp">
+                      <InputOTPGroup>
+                        <InputOTPSlot index={0} />
+                        <InputOTPSlot index={1} />
+                        <InputOTPSlot index={2} />
+                      </InputOTPGroup>
+                      <InputOTPSeparator />
+                      <InputOTPGroup>
+                        <InputOTPSlot index={3} />
+                        <InputOTPSlot index={4} />
+                        <InputOTPSlot index={5} />
+                      </InputOTPGroup>
+                    </InputOTP>
+                    <p className="text-body-sm text-muted-foreground">
+                      Enter the 6-digit code sent to your device.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Label</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A label component for form inputs with proper accessibility.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4 max-w-md w-full">
+                  <div className="space-y-2">
+                    <Label htmlFor="name-label" data-testid="component-label-1">Full Name</Label>
+                    <Input id="name-label" placeholder="John Doe" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="bio-label" data-testid="component-label-2">Bio</Label>
+                    <textarea
+                      id="bio-label"
+                      placeholder="Tell us about yourself"
+                      className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-body-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    />
+                  </div>
+                </div>
               </div>
             </section>
           </TabsContent>
