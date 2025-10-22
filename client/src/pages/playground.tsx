@@ -636,87 +636,113 @@ export default function Playground() {
             <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Card</h2>
               <p className="text-body-md text-muted-foreground mb-6">
-                A flexible container for grouping related content and actions.
+                A flexible container for grouping related content and actions with multiple style variants.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card data-testid="component-card-basic">
-                  <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card description goes here to explain what this card is about.</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-body-md">This is the card content area where you can place any content like text, images, or other components.</p>
-                  </CardContent>
-                </Card>
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Card Variants</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="space-y-2">
+                      <Card variant="default" data-testid="component-card-default" className="h-32" />
+                      <p className="text-label-md text-center">Default</p>
+                      <p className="text-label-sm text-muted-foreground text-center">Subtle shadow</p>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Card variant="hover" data-testid="component-card-hover" className="h-32" />
+                      <p className="text-label-md text-center">Hover</p>
+                      <p className="text-label-sm text-muted-foreground text-center">Elevated shadow</p>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Card variant="color" data-testid="component-card-color" className="h-32" />
+                      <p className="text-label-md text-center">Color</p>
+                      <p className="text-label-sm text-muted-foreground text-center">Light background</p>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Card variant="flat" data-testid="component-card-flat" className="h-32" />
+                      <p className="text-label-md text-center">Flat</p>
+                      <p className="text-label-sm text-muted-foreground text-center">Border only</p>
+                    </div>
+                  </div>
+                </div>
 
-                <Card data-testid="component-card-with-footer">
-                  <CardHeader>
-                    <CardTitle>Card with Footer</CardTitle>
-                    <CardDescription>This card includes a footer section with actions.</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-body-md">Card content can contain any React components or HTML elements.</p>
-                  </CardContent>
-                  <CardFooter className="gap-2">
-                    <Button variant="outline" size="sm">Cancel</Button>
-                    <Button size="sm">Confirm</Button>
-                  </CardFooter>
-                </Card>
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Card Examples</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <Card variant="default">
+                      <CardHeader>
+                        <CardTitle>Default Card</CardTitle>
+                        <CardDescription>Card with subtle shadow for standard content.</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-body-md">This is the default card style with a subtle shadow that works well for most use cases.</p>
+                      </CardContent>
+                    </Card>
 
-                <Card>
-                  <CardHeader>
-                    <div className="flex items-center gap-2">
-                      <Bell className="h-5 w-5 text-primary-50" />
-                      <CardTitle>Notifications</CardTitle>
-                    </div>
-                    <CardDescription>You have 3 unread messages.</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="h-2 w-2 rounded-full bg-primary-50 mt-2" />
-                      <div>
-                        <p className="text-body-sm font-medium">New message from Alice</p>
-                        <p className="text-body-sm text-muted-foreground">2 minutes ago</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="h-2 w-2 rounded-full bg-primary-50 mt-2" />
-                      <div>
-                        <p className="text-body-sm font-medium">Project update available</p>
-                        <p className="text-body-sm text-muted-foreground">1 hour ago</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                  <CardFooter>
-                    <Button variant="ghost" size="sm" className="w-full">
-                      Mark all as read
-                    </Button>
-                  </CardFooter>
-                </Card>
+                    <Card variant="hover">
+                      <CardHeader>
+                        <CardTitle>Hover Card</CardTitle>
+                        <CardDescription>Card with elevated shadow for interactive elements.</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-body-md">This card has a stronger shadow that enhances on hover, perfect for clickable cards.</p>
+                      </CardContent>
+                      <CardFooter className="gap-2">
+                        <Button variant="outline" size="sm">Cancel</Button>
+                        <Button size="sm">Confirm</Button>
+                      </CardFooter>
+                    </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Project Stats</CardTitle>
-                    <CardDescription>Overview of your project metrics</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span className="text-body-md text-muted-foreground">Total Tasks</span>
-                      <span className="text-title-md-em">48</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-body-md text-muted-foreground">Completed</span>
-                      <div className="flex items-center gap-2">
-                        <span className="text-title-md-em">32</span>
-                        <Badge variant="success">67%</Badge>
-                      </div>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-body-md text-muted-foreground">In Progress</span>
-                      <span className="text-title-md-em">16</span>
-                    </div>
-                  </CardContent>
-                </Card>
+                    <Card variant="color">
+                      <CardHeader>
+                        <div className="flex items-center gap-2">
+                          <Bell className="h-5 w-5 text-primary-50" />
+                          <CardTitle>Color Card</CardTitle>
+                        </div>
+                        <CardDescription>Card with light background for emphasis.</CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <div className="h-2 w-2 rounded-full bg-primary-50 mt-2" />
+                          <div>
+                            <p className="text-body-sm font-medium">New message from Alice</p>
+                            <p className="text-body-sm text-muted-foreground">2 minutes ago</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="h-2 w-2 rounded-full bg-primary-50 mt-2" />
+                          <div>
+                            <p className="text-body-sm font-medium">Project update available</p>
+                            <p className="text-body-sm text-muted-foreground">1 hour ago</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    <Card variant="flat">
+                      <CardHeader>
+                        <CardTitle>Flat Card</CardTitle>
+                        <CardDescription>Minimal card with border only.</CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <div className="flex justify-between items-center">
+                          <span className="text-body-md text-muted-foreground">Total Tasks</span>
+                          <span className="text-title-md-em">48</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-body-md text-muted-foreground">Completed</span>
+                          <div className="flex items-center gap-2">
+                            <span className="text-title-md-em">32</span>
+                            <Badge variant="success">67%</Badge>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
               </div>
             </section>
           </TabsContent>
