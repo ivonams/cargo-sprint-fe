@@ -48,17 +48,11 @@ export default function Playground() {
             <TabsTrigger value="typography" data-testid="tab-typography">
               Typography
             </TabsTrigger>
-            <TabsTrigger value="buttons" data-testid="tab-buttons">
-              Buttons
-            </TabsTrigger>
-            <TabsTrigger value="badges" data-testid="tab-badges">
-              Badges
+            <TabsTrigger value="branding" data-testid="tab-branding">
+              Branding
             </TabsTrigger>
             <TabsTrigger value="components" data-testid="tab-components">
               Components
-            </TabsTrigger>
-            <TabsTrigger value="branding" data-testid="tab-branding">
-              Branding
             </TabsTrigger>
           </TabsList>
 
@@ -154,7 +148,7 @@ export default function Playground() {
             </section>
           </TabsContent>
 
-          <TabsContent value="buttons" className="space-y-8 mt-8" data-testid="tab-content-buttons">
+          <TabsContent value="components" className="space-y-12 mt-8" data-testid="tab-content-components">
             <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-6">Button Variants</h2>
               <div className="space-y-8">
@@ -237,9 +231,7 @@ export default function Playground() {
                 </div>
               </div>
             </section>
-          </TabsContent>
 
-          <TabsContent value="badges" className="space-y-8 mt-8" data-testid="tab-content-badges">
             <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Badges</h2>
               <p className="text-body-md text-muted-foreground mb-6">
@@ -276,9 +268,7 @@ export default function Playground() {
                 </div>
               </div>
             </section>
-          </TabsContent>
 
-          <TabsContent value="components" className="space-y-12 mt-8" data-testid="tab-content-components">
             <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Accordion</h2>
               <p className="text-body-md text-muted-foreground mb-6">
