@@ -15,7 +15,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { ContextMenu, ContextMenuContent, ContextMenuItem, ContextMenuTrigger } from "@/components/ui/context-menu";
-import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check, ChevronsUpDown, Calendar as CalendarIcon, User, Mail, Phone } from "lucide-react";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check, ChevronsUpDown, Calendar as CalendarIcon, User, Mail, Phone, MoreVertical, LogOut } from "lucide-react";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
@@ -1042,6 +1045,141 @@ export default function Playground() {
                     </ContextMenuItem>
                   </ContextMenuContent>
                 </ContextMenu>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Dialog</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A modal dialog component that overlays the page content.
+              </p>
+              <div className="flex justify-center">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" data-testid="component-dialog-trigger">Open Dialog</Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[425px]" data-testid="component-dialog-content">
+                    <DialogHeader>
+                      <DialogTitle>Edit Profile</DialogTitle>
+                      <DialogDescription>
+                        Make changes to your profile here. Click save when you're done.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <div className="grid gap-4 py-4">
+                      <div className="grid grid-cols-4 items-center gap-4">
+                        <label htmlFor="name" className="text-right text-body-md">
+                          Name
+                        </label>
+                        <input
+                          id="name"
+                          defaultValue="Pedro Duarte"
+                          className="col-span-3 flex h-10 rounded-md border border-input bg-background px-3 py-2 text-body-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        />
+                      </div>
+                      <div className="grid grid-cols-4 items-center gap-4">
+                        <label htmlFor="username" className="text-right text-body-md">
+                          Username
+                        </label>
+                        <input
+                          id="username"
+                          defaultValue="@peduarte"
+                          className="col-span-3 flex h-10 rounded-md border border-input bg-background px-3 py-2 text-body-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        />
+                      </div>
+                    </div>
+                    <DialogFooter>
+                      <Button type="submit">Save changes</Button>
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Drawer</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A drawer component that slides in from the bottom of the screen.
+              </p>
+              <div className="flex justify-center">
+                <Drawer>
+                  <DrawerTrigger asChild>
+                    <Button variant="outline" data-testid="component-drawer-trigger">Open Drawer</Button>
+                  </DrawerTrigger>
+                  <DrawerContent data-testid="component-drawer-content">
+                    <div className="mx-auto w-full max-w-sm">
+                      <DrawerHeader>
+                        <DrawerTitle>Move Goal</DrawerTitle>
+                        <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+                      </DrawerHeader>
+                      <div className="p-4 pb-0">
+                        <div className="flex items-center justify-center space-x-2">
+                          <Button
+                            variant="outline"
+                            size="icon"
+                            className="h-8 w-8 shrink-0 rounded-full"
+                          >
+                            <span className="sr-only">Decrease</span>
+                            <span className="text-title-md">-</span>
+                          </Button>
+                          <div className="flex-1 text-center">
+                            <div className="text-display-md font-display text-primary-40">350</div>
+                            <p className="text-body-sm text-muted-foreground">
+                              Calories/day
+                            </p>
+                          </div>
+                          <Button
+                            variant="outline"
+                            size="icon"
+                            className="h-8 w-8 shrink-0 rounded-full"
+                          >
+                            <span className="sr-only">Increase</span>
+                            <span className="text-title-md">+</span>
+                          </Button>
+                        </div>
+                      </div>
+                      <DrawerFooter>
+                        <Button>Submit</Button>
+                        <DrawerClose asChild>
+                          <Button variant="outline">Cancel</Button>
+                        </DrawerClose>
+                      </DrawerFooter>
+                    </div>
+                  </DrawerContent>
+                </Drawer>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Dropdown Menu</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A dropdown menu component for displaying a list of actions or options.
+              </p>
+              <div className="flex justify-center">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="outline" size="icon" data-testid="component-dropdown-trigger">
+                      <MoreVertical className="h-4 w-4" />
+                      <span className="sr-only">Open menu</span>
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" data-testid="component-dropdown-content">
+                    <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <User className="mr-2 h-4 w-4" />
+                      <span>Profile</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Settings className="mr-2 h-4 w-4" />
+                      <span>Settings</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <LogOut className="mr-2 h-4 w-4" />
+                      <span>Log out</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </section>
           </TabsContent>
