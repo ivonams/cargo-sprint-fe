@@ -554,6 +554,83 @@ export default function Playground() {
                 </div>
               </div>
             </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Breadcrumb</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Displays navigation hierarchy to help users understand their current location.
+              </p>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Basic Breadcrumb</h3>
+                  <Breadcrumb data-testid="component-breadcrumb-basic">
+                    <BreadcrumbList>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink asChild>
+                          <Link to="/">Home</Link>
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>Playground</BreadcrumbPage>
+                      </BreadcrumbItem>
+                    </BreadcrumbList>
+                  </Breadcrumb>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Multi-level Breadcrumb</h3>
+                  <Breadcrumb data-testid="component-breadcrumb-multilevel">
+                    <BreadcrumbList>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink asChild>
+                          <Link to="/">Home</Link>
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbLink asChild>
+                          <Link to="/playground">Components</Link>
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbLink asChild>
+                          <Link to="/playground">Navigation</Link>
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+                      </BreadcrumbItem>
+                    </BreadcrumbList>
+                  </Breadcrumb>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">With Custom Separator</h3>
+                  <Breadcrumb data-testid="component-breadcrumb-custom">
+                    <BreadcrumbList>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink asChild>
+                          <Link to="/">Home</Link>
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator>/</BreadcrumbSeparator>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink asChild>
+                          <Link to="/playground">Components</Link>
+                        </BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator>/</BreadcrumbSeparator>
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+                      </BreadcrumbItem>
+                    </BreadcrumbList>
+                  </Breadcrumb>
+                </div>
+              </div>
+            </section>
           </TabsContent>
 
           <TabsContent value="branding" className="space-y-12 mt-8" data-testid="tab-content-branding">
