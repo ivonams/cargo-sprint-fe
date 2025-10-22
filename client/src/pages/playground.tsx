@@ -9,8 +9,15 @@ import { Avatar, AvatarGroup } from "@/components/ui/avatar";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "@/components/ui/calendar";
-import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
+import { ContextMenu, ContextMenuContent, ContextMenuItem, ContextMenuTrigger } from "@/components/ui/context-menu";
+import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check, ChevronsUpDown, Calendar as CalendarIcon, User, Mail, Phone } from "lucide-react";
 import { useState } from "react";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 import { Link } from "react-router-dom";
@@ -64,6 +71,77 @@ function CalendarRangeDemo() {
         </p>
       )}
     </div>
+  );
+}
+
+function ChartDemo() {
+  const chartData = [
+    { month: "Jan", desktop: 186 },
+    { month: "Feb", desktop: 305 },
+    { month: "Mar", desktop: 237 },
+    { month: "Apr", desktop: 73 },
+    { month: "May", desktop: 209 },
+    { month: "Jun", desktop: 214 },
+  ];
+
+  const chartConfig = {
+    desktop: {
+      label: "Desktop",
+      color: "hsl(var(--primary))",
+    },
+  };
+
+  return (
+    <ChartContainer config={chartConfig} className="max-w-2xl h-[300px]" data-testid="component-chart">
+      <BarChart accessibilityLayer data={chartData}>
+        <CartesianGrid vertical={false} />
+        <XAxis
+          dataKey="month"
+          tickLine={false}
+          tickMargin={10}
+          axisLine={false}
+          tickFormatter={(value) => value.slice(0, 3)}
+        />
+        <ChartTooltip content={<ChartTooltipContent />} />
+        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} />
+      </BarChart>
+    </ChartContainer>
+  );
+}
+
+function CollapsibleDemo() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <Collapsible
+      open={isOpen}
+      onOpenChange={setIsOpen}
+      className="max-w-md space-y-2"
+      data-testid="component-collapsible"
+    >
+      <div className="flex items-center justify-between space-x-4">
+        <h4 className="text-body-md font-semibold">
+          @peduarte starred 3 repositories
+        </h4>
+        <CollapsibleTrigger asChild>
+          <Button variant="ghost" size="sm" className="w-9 p-0">
+            <ChevronsUpDown className="h-4 w-4" />
+            <span className="sr-only">Toggle</span>
+          </Button>
+        </CollapsibleTrigger>
+      </div>
+      <div className="rounded-md border px-4 py-3 text-body-sm">
+        @radix-ui/primitives
+      </div>
+      <CollapsibleContent className="space-y-2">
+        <div className="rounded-md border px-4 py-3 text-body-sm">
+          @radix-ui/colors
+        </div>
+        <div className="rounded-md border px-4 py-3 text-body-sm">
+          @stitches/react
+        </div>
+      </CollapsibleContent>
+    </Collapsible>
   );
 }
 
@@ -805,6 +883,165 @@ export default function Playground() {
                     </Card>
                   </div>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Carousel</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A carousel component for cycling through elements like images or cards.
+              </p>
+              <div className="max-w-xl mx-auto">
+                <Carousel className="w-full" data-testid="component-carousel">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <Card>
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <div className="text-center">
+                            <p className="text-display-sm font-display text-primary-40">1</p>
+                            <p className="text-body-md text-muted-foreground mt-2">First slide</p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <Card>
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <div className="text-center">
+                            <p className="text-display-sm font-display text-secondary-40">2</p>
+                            <p className="text-body-md text-muted-foreground mt-2">Second slide</p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <Card>
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <div className="text-center">
+                            <p className="text-display-sm font-display text-tertiary-40">3</p>
+                            <p className="text-body-md text-muted-foreground mt-2">Third slide</p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Chart</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A chart component for visualizing data using Recharts library.
+              </p>
+              <ChartDemo />
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Checkbox</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A checkbox component for binary choices or multi-select options.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Basic Checkboxes</h3>
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-center space-x-2">
+                      <Checkbox id="terms" data-testid="component-checkbox-1" />
+                      <label
+                        htmlFor="terms"
+                        className="text-body-md leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        Accept terms and conditions
+                      </label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Checkbox id="marketing" defaultChecked data-testid="component-checkbox-2" />
+                      <label
+                        htmlFor="marketing"
+                        className="text-body-md leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        Receive marketing emails
+                      </label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Checkbox id="disabled" disabled />
+                      <label
+                        htmlFor="disabled"
+                        className="text-body-md leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        Disabled checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Collapsible</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A collapsible component for showing and hiding content.
+              </p>
+              <CollapsibleDemo />
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Command</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A command palette component for fast navigation and actions with search functionality.
+              </p>
+              <div className="max-w-md">
+                <Command className="rounded-lg border shadow-md" data-testid="component-command">
+                  <CommandInput placeholder="Type a command or search..." />
+                  <CommandList>
+                    <CommandEmpty>No results found.</CommandEmpty>
+                    <CommandGroup heading="Suggestions">
+                      <CommandItem>
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        <span>Calendar</span>
+                      </CommandItem>
+                      <CommandItem>
+                        <User className="mr-2 h-4 w-4" />
+                        <span>Profile</span>
+                      </CommandItem>
+                      <CommandItem>
+                        <Mail className="mr-2 h-4 w-4" />
+                        <span>Email</span>
+                      </CommandItem>
+                    </CommandGroup>
+                  </CommandList>
+                </Command>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Context Menu</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A context menu component that appears on right-click.
+              </p>
+              <div className="flex justify-center">
+                <ContextMenu>
+                  <ContextMenuTrigger className="flex h-32 w-64 items-center justify-center rounded-md border border-dashed text-body-sm" data-testid="component-context-menu-trigger">
+                    Right click here
+                  </ContextMenuTrigger>
+                  <ContextMenuContent className="w-64" data-testid="component-context-menu-content">
+                    <ContextMenuItem>
+                      <User className="mr-2 h-4 w-4" />
+                      Profile
+                    </ContextMenuItem>
+                    <ContextMenuItem>
+                      <Mail className="mr-2 h-4 w-4" />
+                      Messages
+                    </ContextMenuItem>
+                    <ContextMenuItem>
+                      <Settings className="mr-2 h-4 w-4" />
+                      Settings
+                    </ContextMenuItem>
+                  </ContextMenuContent>
+                </ContextMenu>
               </div>
             </section>
           </TabsContent>

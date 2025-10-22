@@ -68,6 +68,26 @@ This project follows best practices from several guideline documents:
   - Located in `client/src/components/branding/`
   - Exported through barrel file for easy imports: `import { CargoSprintLogo, SprintPayLogo } from "@/components/branding"`
   - Showcased in playground page branding tab at `/playground`
+- **Component Playground**: Interactive showcase at `/playground` with 4 organized tabs:
+  - **Colors Tab**: Complete color palette showcase for all 10 CargoSprint DS palettes
+  - **Typography Tab**: Typography scale samples showing all Display, Headline, Title, Body, and Label variants
+  - **Branding Tab**: CargoSprint logo and product logo variants with theme switching
+  - **Components Tab**: Alphabetically organized component demos including:
+    - Accordion: Collapsible content sections with expand/collapse functionality
+    - Alert: Info, warning, error, and success alert variants
+    - Avatar: User avatars with fallbacks, colors using CargoSprint DS palette tokens, and group compositions
+    - Badge: Status badges with semantic variants (default, success, warning, error, info, outline)
+    - Breadcrumb: Navigation breadcrumbs for hierarchical page structures
+    - Button: Multiple variants (default, secondary, outline, ghost, destructive, link) and sizes
+    - Calendar: Single date picker and date range selection using react-day-picker
+    - Card: Four variants (default, hover, color, flat) matching Figma specifications with appropriate shadows
+    - Carousel: Image/content carousel with navigation controls using Embla Carousel
+    - Chart: Data visualization using Recharts library with CargoSprint DS theming
+    - Checkbox: Binary choice inputs with enabled, checked, and disabled states
+    - Collapsible: Show/hide content sections with animated transitions
+    - Command: Command palette for fast navigation and search functionality using cmdk
+    - Context Menu: Right-click context menus with grouped actions
+  - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 
 **Theme System**: Custom theme provider supporting light/dark modes with localStorage persistence. Theme state is managed through React Context and applies CSS classes to the document root. All CargoSprint DS colors automatically adapt to the selected theme.
