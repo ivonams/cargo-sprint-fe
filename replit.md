@@ -109,7 +109,13 @@ This project follows best practices from several guideline documents:
     - Skeleton: Placeholder component showing loading states with animated pulse effect (avatar, text lines, and image placeholders)
     - Slider: Input control for selecting a value from a range (Volume, Brightness examples with disabled state)
     - Switch: Toggle switch component for binary on/off states (Airplane Mode, Notifications examples with disabled state)
-    - Table: Responsive table component for structured data with header, body, rows, cells, and caption (invoices example with 7 rows showing payment status badges)
+    - Table: Responsive table component for structured data with header, body, rows, cells, and caption (invoices example with 7 rows showing payment status badges: success, neutral, error, info)
+    - Tabs: Tabbed interface for organizing content into separate views (Account/Password example with nested form inputs)
+    - Textarea: Multi-line text input for longer content with placeholder text, character limits, and disabled states
+    - Toast: Temporary notification messages providing user feedback (Simple, Success, Error toast variants with action buttons)
+    - Toggle: Two-state button for toggling features on/off (Bold, Italic, Underline formatting buttons with disabled state)
+    - Toggle Group: Set of toggle buttons with single or multiple selection modes (Text alignment and formatting examples)
+    - Tooltip: Popup information display on hover (Multiple tooltip positions and trigger variations)
   - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 

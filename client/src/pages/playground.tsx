@@ -39,6 +39,11 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { Toggle } from "@/components/ui/toggle";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -47,6 +52,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
+import { Bold, Italic, Underline, AlignLeft, AlignCenter, AlignRight, InfoIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function CalendarDemo() {
@@ -169,6 +175,68 @@ function CollapsibleDemo() {
         </div>
       </CollapsibleContent>
     </Collapsible>
+  );
+}
+
+function ToastDemo() {
+  const { toast } = useToast();
+
+  return (
+    <div className="flex flex-wrap gap-4">
+      <Button
+        variant="outline"
+        onClick={() => {
+          toast({
+            title: "Notification",
+            description: "This is a simple toast notification.",
+          });
+        }}
+        data-testid="component-toast-1"
+      >
+        Simple Toast
+      </Button>
+      <Button
+        variant="outline"
+        onClick={() => {
+          toast({
+            title: "Success!",
+            description: "Your changes have been saved successfully.",
+          });
+        }}
+        data-testid="component-toast-2"
+      >
+        Success Message
+      </Button>
+      <Button
+        variant="outline"
+        onClick={() => {
+          toast({
+            title: "Error",
+            description: "Something went wrong. Please try again.",
+            variant: "destructive",
+          });
+        }}
+        data-testid="component-toast-3"
+      >
+        Error Toast
+      </Button>
+      <Button
+        variant="outline"
+        onClick={() => {
+          toast({
+            title: "Action Required",
+            description: "Click the button to continue.",
+            action: {
+              label: "Continue",
+              onClick: () => console.log("Action clicked"),
+            } as any,
+          });
+        }}
+        data-testid="component-toast-4"
+      >
+        With Action
+      </Button>
+    </div>
   );
 }
 
@@ -1939,7 +2007,7 @@ export default function Playground() {
                       <TableRow>
                         <TableCell className="text-body-sm font-medium">INV-001</TableCell>
                         <TableCell className="text-body-sm">
-                          <Badge variant="default">Paid</Badge>
+                          <Badge variant="success">Paid</Badge>
                         </TableCell>
                         <TableCell className="text-body-sm">Credit Card</TableCell>
                         <TableCell className="text-body-sm text-right">$250.00</TableCell>
@@ -1947,7 +2015,7 @@ export default function Playground() {
                       <TableRow>
                         <TableCell className="text-body-sm font-medium">INV-002</TableCell>
                         <TableCell className="text-body-sm">
-                          <Badge variant="warning">Pending</Badge>
+                          <Badge variant="neutral">Pending</Badge>
                         </TableCell>
                         <TableCell className="text-body-sm">PayPal</TableCell>
                         <TableCell className="text-body-sm text-right">$150.00</TableCell>
@@ -1963,7 +2031,7 @@ export default function Playground() {
                       <TableRow>
                         <TableCell className="text-body-sm font-medium">INV-004</TableCell>
                         <TableCell className="text-body-sm">
-                          <Badge variant="default">Paid</Badge>
+                          <Badge variant="success">Paid</Badge>
                         </TableCell>
                         <TableCell className="text-body-sm">Credit Card</TableCell>
                         <TableCell className="text-body-sm text-right">$450.00</TableCell>
@@ -1971,7 +2039,7 @@ export default function Playground() {
                       <TableRow>
                         <TableCell className="text-body-sm font-medium">INV-005</TableCell>
                         <TableCell className="text-body-sm">
-                          <Badge variant="default">Paid</Badge>
+                          <Badge variant="success">Paid</Badge>
                         </TableCell>
                         <TableCell className="text-body-sm">PayPal</TableCell>
                         <TableCell className="text-body-sm text-right">$550.00</TableCell>
@@ -1987,7 +2055,7 @@ export default function Playground() {
                       <TableRow>
                         <TableCell className="text-body-sm font-medium">INV-007</TableCell>
                         <TableCell className="text-body-sm">
-                          <Badge variant="default">Paid</Badge>
+                          <Badge variant="success">Paid</Badge>
                         </TableCell>
                         <TableCell className="text-body-sm">Credit Card</TableCell>
                         <TableCell className="text-body-sm text-right">$300.00</TableCell>
@@ -1995,6 +2063,199 @@ export default function Playground() {
                     </TableBody>
                   </Table>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Tabs</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A tabbed interface for organizing content into separate views.
+              </p>
+              <div className="flex justify-center">
+                <div className="max-w-md w-full">
+                  <Tabs defaultValue="account" data-testid="component-tabs-1">
+                    <TabsList className="grid w-full grid-cols-2">
+                      <TabsTrigger value="account" className="text-body-sm">Account</TabsTrigger>
+                      <TabsTrigger value="password" className="text-body-sm">Password</TabsTrigger>
+                    </TabsList>
+                    <TabsContent value="account" className="space-y-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="tab-name" className="text-body-sm">Name</Label>
+                        <Input id="tab-name" defaultValue="John Doe" />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="tab-username" className="text-body-sm">Username</Label>
+                        <Input id="tab-username" defaultValue="@johndoe" />
+                      </div>
+                      <Button className="text-body-sm">Save changes</Button>
+                    </TabsContent>
+                    <TabsContent value="password" className="space-y-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="current-password" className="text-body-sm">Current password</Label>
+                        <Input id="current-password" type="password" />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="new-password" className="text-body-sm">New password</Label>
+                        <Input id="new-password" type="password" />
+                      </div>
+                      <Button className="text-body-sm">Change password</Button>
+                    </TabsContent>
+                  </Tabs>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Textarea</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A multi-line text input for longer content.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4 max-w-md w-full">
+                  <div className="space-y-2">
+                    <Label htmlFor="message" className="text-body-sm">Message</Label>
+                    <Textarea 
+                      id="message" 
+                      placeholder="Type your message here..." 
+                      className="min-h-[100px]"
+                      data-testid="component-textarea-1"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="bio" className="text-body-sm">Bio</Label>
+                    <Textarea 
+                      id="bio" 
+                      placeholder="Tell us about yourself..." 
+                      className="min-h-[120px]"
+                      data-testid="component-textarea-2"
+                    />
+                    <p className="text-label-sm text-muted-foreground">Maximum 500 characters.</p>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="disabled-textarea" className="text-body-sm">Disabled</Label>
+                    <Textarea 
+                      id="disabled-textarea" 
+                      placeholder="This textarea is disabled" 
+                      disabled
+                      data-testid="component-textarea-3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Toast</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A notification message that appears temporarily to provide feedback.
+              </p>
+              <div className="flex justify-center">
+                <ToastDemo />
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Toggle</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A two-state button for toggling between on and off states.
+              </p>
+              <div className="flex justify-center">
+                <div className="flex flex-wrap gap-4">
+                  <Toggle aria-label="Toggle bold" data-testid="component-toggle-1">
+                    <Bold className="h-4 w-4" />
+                  </Toggle>
+                  <Toggle aria-label="Toggle italic" data-testid="component-toggle-2">
+                    <Italic className="h-4 w-4" />
+                  </Toggle>
+                  <Toggle aria-label="Toggle underline" data-testid="component-toggle-3">
+                    <Underline className="h-4 w-4" />
+                  </Toggle>
+                  <Toggle aria-label="Toggle disabled" disabled data-testid="component-toggle-4">
+                    <Bold className="h-4 w-4" />
+                  </Toggle>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Toggle Group</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A set of toggle buttons grouped together with single or multiple selection.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label className="text-body-sm">Single Selection</Label>
+                    <ToggleGroup type="single" defaultValue="center" data-testid="component-toggle-group-1">
+                      <ToggleGroupItem value="left" aria-label="Align left">
+                        <AlignLeft className="h-4 w-4" />
+                      </ToggleGroupItem>
+                      <ToggleGroupItem value="center" aria-label="Align center">
+                        <AlignCenter className="h-4 w-4" />
+                      </ToggleGroupItem>
+                      <ToggleGroupItem value="right" aria-label="Align right">
+                        <AlignRight className="h-4 w-4" />
+                      </ToggleGroupItem>
+                    </ToggleGroup>
+                  </div>
+                  <div className="space-y-2">
+                    <Label className="text-body-sm">Multiple Selection</Label>
+                    <ToggleGroup type="multiple" data-testid="component-toggle-group-2">
+                      <ToggleGroupItem value="bold" aria-label="Toggle bold">
+                        <Bold className="h-4 w-4" />
+                      </ToggleGroupItem>
+                      <ToggleGroupItem value="italic" aria-label="Toggle italic">
+                        <Italic className="h-4 w-4" />
+                      </ToggleGroupItem>
+                      <ToggleGroupItem value="underline" aria-label="Toggle underline">
+                        <Underline className="h-4 w-4" />
+                      </ToggleGroupItem>
+                    </ToggleGroup>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Tooltip</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A popup that displays information when hovering over an element.
+              </p>
+              <div className="flex justify-center">
+                <TooltipProvider>
+                  <div className="flex flex-wrap gap-4">
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button variant="outline" data-testid="component-tooltip-1">
+                          Hover me
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="text-body-sm">This is a tooltip</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button variant="outline" data-testid="component-tooltip-2">
+                          <InfoIcon className="h-4 w-4" />
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="text-body-sm">More information here</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button data-testid="component-tooltip-3">
+                          Action
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent side="bottom">
+                        <p className="text-body-sm">Click to perform action</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
+                </TooltipProvider>
               </div>
             </section>
           </TabsContent>
