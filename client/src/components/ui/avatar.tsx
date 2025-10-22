@@ -155,11 +155,10 @@ const AvatarGroup = React.forwardRef<HTMLDivElement, AvatarGroupProps>(
             alt={avatar.alt}
             name={avatar.name}
             size={size}
-            className="ring-2 ring-background"
           />
         ))}
         {remaining > 0 && (
-          <Avatar size={size} className="ring-2 ring-background">
+          <Avatar size={size}>
             <AvatarFallback size={size} className="bg-neutral-80 text-neutral-20">
               +{remaining}
             </AvatarFallback>
