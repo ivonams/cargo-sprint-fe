@@ -5,8 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Plus, Download, Settings, ArrowLeft, Terminal, AlertCircle, User } from "lucide-react";
+import { Plus, Download, Settings, ArrowLeft, Terminal, AlertCircle } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 import { Link } from "react-router-dom";
@@ -392,52 +391,6 @@ export default function Playground() {
                       21:9 Aspect Ratio
                     </div>
                   </AspectRatio>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-headline-md-em font-display text-foreground mb-4">Avatar</h2>
-              <p className="text-body-md text-muted-foreground mb-6">
-                Displays user profile pictures or initials in a circular container.
-              </p>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">With Image</h3>
-                  <div className="flex items-center gap-4">
-                    <Avatar data-testid="component-avatar-image">
-                      <AvatarImage src="https://github.com/shadcn.png" alt="User" />
-                      <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>
-                    <Avatar className="h-12 w-12">
-                      <AvatarImage src="https://github.com/shadcn.png" alt="User" />
-                      <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>
-                    <Avatar className="h-16 w-16">
-                      <AvatarImage src="https://github.com/shadcn.png" alt="User" />
-                      <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">With Fallback</h3>
-                  <div className="flex items-center gap-4">
-                    <Avatar data-testid="component-avatar-fallback">
-                      <AvatarFallback>
-                        <User className="h-4 w-4" />
-                      </AvatarFallback>
-                    </Avatar>
-                    <Avatar>
-                      <AvatarFallback>JD</AvatarFallback>
-                    </Avatar>
-                    <Avatar>
-                      <AvatarFallback>AB</AvatarFallback>
-                    </Avatar>
-                    <Avatar>
-                      <AvatarFallback className="bg-primary-90 text-primary-10">CS</AvatarFallback>
-                    </Avatar>
-                  </div>
                 </div>
               </div>
             </section>
