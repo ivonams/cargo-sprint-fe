@@ -6,7 +6,8 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Avatar, AvatarGroup } from "@/components/ui/avatar";
-import { Plus, Download, Settings, ArrowLeft, Terminal, AlertCircle } from "lucide-react";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Plus, Download, Settings, Terminal, AlertCircle } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 import { Link } from "react-router-dom";
@@ -15,17 +16,19 @@ export default function Playground() {
   return (
     <div className="min-h-screen w-full bg-background p-8">
       <div className="max-w-6xl mx-auto space-y-8">
-        <Button
-          variant="ghost"
-          asChild
-          className="mb-4"
-          data-testid="button-back"
-        >
-          <Link to="/" className="inline-flex items-center gap-2">
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </Button>
+        <Breadcrumb data-testid="breadcrumb">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link to="/">Home</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Playground</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         
         <div>
           <h1 className="text-headline-lg-em font-display text-foreground mb-2" data-testid="text-playground-heading">
