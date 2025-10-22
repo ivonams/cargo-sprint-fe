@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Avatar, AvatarGroup } from "@/components/ui/avatar";
 import { Plus, Download, Settings, ArrowLeft, Terminal, AlertCircle } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
@@ -391,6 +392,162 @@ export default function Playground() {
                       21:9 Aspect Ratio
                     </div>
                   </AspectRatio>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Avatar</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Displays user profile pictures, initials, or grouped avatars in a circular container.
+              </p>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Photo Avatars</h3>
+                  <div className="flex items-center gap-6">
+                    <div className="space-y-2">
+                      <Avatar 
+                        size="md" 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" 
+                        alt="User"
+                        data-testid="component-avatar-photo-md"
+                      />
+                      <p className="text-label-sm text-muted-foreground">Medium (40px)</p>
+                    </div>
+                    <div className="space-y-2">
+                      <Avatar 
+                        size="sm" 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" 
+                        alt="User"
+                        data-testid="component-avatar-photo-sm"
+                      />
+                      <p className="text-label-sm text-muted-foreground">Small (24px)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Basic Avatars (Letters)</h3>
+                  <p className="text-body-sm text-muted-foreground mb-4">
+                    Colors are automatically assigned based on the name for consistent identification.
+                  </p>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-label-md text-muted-foreground mb-3">Medium (40px)</p>
+                      <div className="flex items-center gap-4">
+                        <Avatar size="md" name="Alice" data-testid="component-avatar-basic-alice" />
+                        <Avatar size="md" name="Bob" />
+                        <Avatar size="md" name="Charlie" />
+                        <Avatar size="md" name="Diana" />
+                        <Avatar size="md" name="Eve" />
+                        <Avatar size="md" name="Frank" />
+                        <Avatar size="md" name="Grace" />
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-label-md text-muted-foreground mb-3">Small (24px)</p>
+                      <div className="flex items-center gap-4">
+                        <Avatar size="sm" name="Alice" data-testid="component-avatar-basic-alice-sm" />
+                        <Avatar size="sm" name="Bob" />
+                        <Avatar size="sm" name="Charlie" />
+                        <Avatar size="sm" name="Diana" />
+                        <Avatar size="sm" name="Eve" />
+                        <Avatar size="sm" name="Frank" />
+                        <Avatar size="sm" name="Grace" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Avatar Groups</h3>
+                  <p className="text-body-sm text-muted-foreground mb-4">
+                    Multiple avatars displayed with overlap to show team members or collaborators.
+                  </p>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-label-md text-muted-foreground mb-3">Medium (40px)</p>
+                      <div className="flex flex-col gap-4">
+                        <AvatarGroup 
+                          size="md"
+                          avatars={[
+                            { name: "Alice" },
+                            { name: "George" },
+                          ]}
+                          data-testid="component-avatar-group-2-md"
+                        />
+                        <AvatarGroup 
+                          size="md"
+                          avatars={[
+                            { name: "Alice" },
+                            { name: "Bob" },
+                            { name: "Charlie" },
+                          ]}
+                        />
+                        <AvatarGroup 
+                          size="md"
+                          avatars={[
+                            { src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", alt: "User 1" },
+                            { name: "Alice" },
+                            { name: "Bob" },
+                            { name: "Charlie" },
+                          ]}
+                        />
+                        <AvatarGroup 
+                          size="md"
+                          avatars={[
+                            { name: "Alice" },
+                            { name: "Bob" },
+                            { name: "Charlie" },
+                            { name: "Diana" },
+                            { name: "Eve" },
+                          ]}
+                          max={3}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-label-md text-muted-foreground mb-3">Small (24px)</p>
+                      <div className="flex flex-col gap-4">
+                        <AvatarGroup 
+                          size="sm"
+                          avatars={[
+                            { name: "Alice" },
+                            { name: "George" },
+                          ]}
+                          data-testid="component-avatar-group-2-sm"
+                        />
+                        <AvatarGroup 
+                          size="sm"
+                          avatars={[
+                            { name: "Alice" },
+                            { name: "Bob" },
+                            { name: "Charlie" },
+                          ]}
+                        />
+                        <AvatarGroup 
+                          size="sm"
+                          avatars={[
+                            { src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", alt: "User 1" },
+                            { name: "Alice" },
+                            { name: "Bob" },
+                            { name: "Charlie" },
+                          ]}
+                        />
+                        <AvatarGroup 
+                          size="sm"
+                          avatars={[
+                            { name: "Alice" },
+                            { name: "Bob" },
+                            { name: "Charlie" },
+                            { name: "Diana" },
+                            { name: "Eve" },
+                          ]}
+                          max={3}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
