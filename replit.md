@@ -97,6 +97,9 @@ This project follows best practices from several guideline documents:
     - Label: Label component for form inputs with proper accessibility and htmlFor attributes
     - Menubar: Horizontal menu bar with dropdown menus, keyboard shortcuts, and separators
     - Navigation Menu: Navigation menu with dropdown content panels for complex site navigation
+    - Pagination: Navigation between pages with previous/next controls, page numbers, and ellipsis
+    - Popover: Popup overlay that displays content when triggered, with form inputs example
+    - Progress: Visual indicator showing completion progress with multiple percentage states (0%, 33%, 66%, 100%)
   - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 

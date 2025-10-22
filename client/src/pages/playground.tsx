@@ -26,6 +26,9 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarSeparator, MenubarShortcut, MenubarTrigger } from "@/components/ui/menubar";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Progress } from "@/components/ui/progress";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -1541,6 +1544,133 @@ export default function Playground() {
                     </NavigationMenuItem>
                   </NavigationMenuList>
                 </NavigationMenu>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Pagination</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Navigation between pages with previous/next controls and page numbers.
+              </p>
+              <div className="flex justify-center">
+                <Pagination data-testid="component-pagination">
+                  <PaginationContent>
+                    <PaginationItem>
+                      <PaginationPrevious onClick={() => {}} />
+                    </PaginationItem>
+                    <PaginationItem>
+                      <PaginationLink onClick={() => {}} isActive>1</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                      <PaginationLink onClick={() => {}}>2</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                      <PaginationLink onClick={() => {}}>3</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                      <PaginationEllipsis />
+                    </PaginationItem>
+                    <PaginationItem>
+                      <PaginationLink onClick={() => {}}>10</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                      <PaginationNext onClick={() => {}} />
+                    </PaginationItem>
+                  </PaginationContent>
+                </Pagination>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Popover</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A popup overlay that displays content when triggered by a user action.
+              </p>
+              <div className="flex justify-center">
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Button variant="outline" data-testid="component-popover-trigger">Open Popover</Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-80" data-testid="component-popover-content">
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <h4 className="text-body-md-em font-medium leading-none">Dimensions</h4>
+                        <p className="text-body-sm text-muted-foreground">
+                          Set the dimensions for the layer.
+                        </p>
+                      </div>
+                      <div className="grid gap-2">
+                        <div className="grid grid-cols-3 items-center gap-4">
+                          <Label htmlFor="width">Width</Label>
+                          <Input
+                            id="width"
+                            defaultValue="100%"
+                            className="col-span-2 h-8"
+                          />
+                        </div>
+                        <div className="grid grid-cols-3 items-center gap-4">
+                          <Label htmlFor="maxWidth">Max. width</Label>
+                          <Input
+                            id="maxWidth"
+                            defaultValue="300px"
+                            className="col-span-2 h-8"
+                          />
+                        </div>
+                        <div className="grid grid-cols-3 items-center gap-4">
+                          <Label htmlFor="height">Height</Label>
+                          <Input
+                            id="height"
+                            defaultValue="25px"
+                            className="col-span-2 h-8"
+                          />
+                        </div>
+                        <div className="grid grid-cols-3 items-center gap-4">
+                          <Label htmlFor="maxHeight">Max. height</Label>
+                          <Input
+                            id="maxHeight"
+                            defaultValue="none"
+                            className="col-span-2 h-8"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </PopoverContent>
+                </Popover>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Progress</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A visual indicator showing the completion progress of a task or operation.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-6 max-w-md w-full">
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-body-sm">
+                      <span className="text-muted-foreground">Progress: 0%</span>
+                    </div>
+                    <Progress value={0} data-testid="component-progress-0" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-body-sm">
+                      <span className="text-muted-foreground">Progress: 33%</span>
+                    </div>
+                    <Progress value={33} data-testid="component-progress-33" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-body-sm">
+                      <span className="text-muted-foreground">Progress: 66%</span>
+                    </div>
+                    <Progress value={66} data-testid="component-progress-66" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-body-sm">
+                      <span className="text-muted-foreground">Progress: 100%</span>
+                    </div>
+                    <Progress value={100} data-testid="component-progress-100" />
+                  </div>
+                </div>
               </div>
             </section>
           </TabsContent>
