@@ -19,7 +19,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     label,
     supportingText,
     error = false,
-    showSearchIcon = true,
+    showSearchIcon = false,
     showClearIcon = true,
     onClear,
     value,
