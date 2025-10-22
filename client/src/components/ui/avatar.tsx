@@ -20,11 +20,11 @@ const avatarVariants = cva(
 )
 
 const avatarColors = [
-  "bg-[#2E5AAC] text-white", // Blue
-  "bg-[#7B2D8E] text-white", // Purple
-  "bg-[#B87843] text-white", // Orange/Brown
-  "bg-[#5B92C3] text-white", // Light Blue
-  "bg-[#3D7B52] text-white", // Green
+  "bg-secondary-40 text-white", // Blue from secondary palette
+  "bg-info-40 text-white", // Bright Blue from info palette
+  "bg-warning-60 text-white", // Orange from warning palette
+  "bg-secondary-60 text-white", // Light Blue from secondary palette
+  "bg-tertiary-40 text-white", // Green from tertiary palette
 ]
 
 function getAvatarColor(name?: string): string {
