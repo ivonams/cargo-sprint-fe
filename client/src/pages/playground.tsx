@@ -38,6 +38,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Skeleton } from "@/components/ui/skeleton";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -1913,6 +1914,86 @@ export default function Playground() {
                     <Switch id="dark-mode" disabled data-testid="component-switch-3" />
                     <Label htmlFor="dark-mode" className="text-body-sm cursor-pointer opacity-50">Dark Mode (disabled)</Label>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Table</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A responsive table component for displaying structured data with rows and columns.
+              </p>
+              <div className="flex justify-center">
+                <div className="max-w-4xl w-full">
+                  <Table data-testid="component-table-1">
+                    <TableCaption className="text-body-sm">A list of recent invoices and their payment status.</TableCaption>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="text-body-sm-em w-[100px]">Invoice</TableHead>
+                        <TableHead className="text-body-sm-em">Status</TableHead>
+                        <TableHead className="text-body-sm-em">Method</TableHead>
+                        <TableHead className="text-body-sm-em text-right">Amount</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-001</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="default">Paid</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">Credit Card</TableCell>
+                        <TableCell className="text-body-sm text-right">$250.00</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-002</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="warning">Pending</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">PayPal</TableCell>
+                        <TableCell className="text-body-sm text-right">$150.00</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-003</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="error">Overdue</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">Bank Transfer</TableCell>
+                        <TableCell className="text-body-sm text-right">$350.00</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-004</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="default">Paid</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">Credit Card</TableCell>
+                        <TableCell className="text-body-sm text-right">$450.00</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-005</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="default">Paid</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">PayPal</TableCell>
+                        <TableCell className="text-body-sm text-right">$550.00</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-006</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="info">Processing</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">Bank Transfer</TableCell>
+                        <TableCell className="text-body-sm text-right">$200.00</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="text-body-sm font-medium">INV-007</TableCell>
+                        <TableCell className="text-body-sm">
+                          <Badge variant="default">Paid</Badge>
+                        </TableCell>
+                        <TableCell className="text-body-sm">Credit Card</TableCell>
+                        <TableCell className="text-body-sm text-right">$300.00</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
                 </div>
               </div>
             </section>

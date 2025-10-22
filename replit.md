@@ -109,6 +109,7 @@ This project follows best practices from several guideline documents:
     - Skeleton: Placeholder component showing loading states with animated pulse effect (avatar, text lines, and image placeholders)
     - Slider: Input control for selecting a value from a range (Volume, Brightness examples with disabled state)
     - Switch: Toggle switch component for binary on/off states (Airplane Mode, Notifications examples with disabled state)
+    - Table: Responsive table component for structured data with header, body, rows, cells, and caption (invoices example with 7 rows showing payment status badges)
   - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 
