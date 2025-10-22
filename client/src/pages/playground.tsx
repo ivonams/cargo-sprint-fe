@@ -150,126 +150,6 @@ export default function Playground() {
 
           <TabsContent value="components" className="space-y-12 mt-8" data-testid="tab-content-components">
             <section>
-              <h2 className="text-headline-md-em font-display text-foreground mb-6">Button Variants</h2>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Primary (Default Variant)</h3>
-                  <div className="flex flex-wrap gap-4">
-                    <Button variant="default" data-testid="button-primary">
-                      <Plus />
-                      Button
-                    </Button>
-                    <Button variant="default" data-testid="button-primary-text-only">
-                      Button
-                    </Button>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Secondary (Outline Variant)</h3>
-                  <div className="flex flex-wrap gap-4">
-                    <Button variant="outline" data-testid="button-secondary">
-                      <Download />
-                      Button
-                    </Button>
-                    <Button variant="outline" data-testid="button-secondary-text-only">
-                      Button
-                    </Button>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Tertiary (Ghost Variant)</h3>
-                  <div className="flex flex-wrap gap-4">
-                    <Button variant="ghost" data-testid="button-tertiary">
-                      <Settings />
-                      Button
-                    </Button>
-                    <Button variant="ghost" data-testid="button-tertiary-text-only">
-                      Button
-                    </Button>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Sizes</h3>
-                  <div className="flex flex-wrap items-center gap-4">
-                    <Button size="sm" data-testid="button-size-sm">
-                      <Plus />
-                      Small
-                    </Button>
-                    <Button size="default" data-testid="button-size-default">
-                      <Plus />
-                      Default
-                    </Button>
-                    <Button size="lg" data-testid="button-size-lg">
-                      <Plus />
-                      Large
-                    </Button>
-                    <Button size="icon" data-testid="button-size-icon">
-                      <Plus />
-                    </Button>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Disabled State</h3>
-                  <div className="flex flex-wrap gap-4">
-                    <Button variant="default" disabled data-testid="button-disabled-primary">
-                      <Plus />
-                      Disabled
-                    </Button>
-                    <Button variant="outline" disabled data-testid="button-disabled-secondary">
-                      <Download />
-                      Disabled
-                    </Button>
-                    <Button variant="ghost" disabled data-testid="button-disabled-tertiary">
-                      <Settings />
-                      Disabled
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-headline-md-em font-display text-foreground mb-4">Badges</h2>
-              <p className="text-body-md text-muted-foreground mb-6">
-                Small status indicators with soft pastel backgrounds.
-              </p>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">All Variants</h3>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <Badge variant="info">Label</Badge>
-                    <Badge variant="error">Label</Badge>
-                    <Badge variant="neutral">Label</Badge>
-                    <Badge variant="success">Label</Badge>
-                    <Badge variant="outline">Label</Badge>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-title-md-em text-foreground mb-4">Examples</h3>
-                  <div className="space-y-3">
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="text-body-md">Status:</span>
-                      <Badge variant="success">Active</Badge>
-                      <Badge variant="error">Failed</Badge>
-                      <Badge variant="neutral">Pending</Badge>
-                    </div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="text-body-md">Notifications:</span>
-                      <Badge variant="info">5</Badge>
-                      <Badge variant="info">99+</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Accordion</h2>
               <p className="text-body-md text-muted-foreground mb-6">
                 A collapsible component to organize content in expandable sections.
@@ -299,6 +179,30 @@ export default function Playground() {
             </section>
 
             <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Alert</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Displays a callout for user attention with different variants for various message types.
+              </p>
+              <div className="space-y-4 max-w-2xl">
+                <Alert data-testid="component-alert-default">
+                  <Terminal className="h-4 w-4" />
+                  <AlertTitle>Heads up!</AlertTitle>
+                  <AlertDescription>
+                    You can add components to your app using the cli.
+                  </AlertDescription>
+                </Alert>
+                
+                <Alert variant="destructive" data-testid="component-alert-destructive">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertTitle>Error</AlertTitle>
+                  <AlertDescription>
+                    Your session has expired. Please log in again.
+                  </AlertDescription>
+                </Alert>
+              </div>
+            </section>
+
+            <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Alert Dialog</h2>
               <p className="text-body-md text-muted-foreground mb-6">
                 A modal dialog that interrupts the user with important content and expects a response.
@@ -322,30 +226,6 @@ export default function Playground() {
                     </AlertDialogFooter>
                   </AlertDialogContent>
                 </AlertDialog>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-headline-md-em font-display text-foreground mb-4">Alert</h2>
-              <p className="text-body-md text-muted-foreground mb-6">
-                Displays a callout for user attention with different variants for various message types.
-              </p>
-              <div className="space-y-4 max-w-2xl">
-                <Alert data-testid="component-alert-default">
-                  <Terminal className="h-4 w-4" />
-                  <AlertTitle>Heads up!</AlertTitle>
-                  <AlertDescription>
-                    You can add components to your app using the cli.
-                  </AlertDescription>
-                </Alert>
-                
-                <Alert variant="destructive" data-testid="component-alert-destructive">
-                  <AlertCircle className="h-4 w-4" />
-                  <AlertTitle>Error</AlertTitle>
-                  <AlertDescription>
-                    Your session has expired. Please log in again.
-                  </AlertDescription>
-                </Alert>
               </div>
             </section>
 
@@ -547,6 +427,43 @@ export default function Playground() {
             </section>
 
             <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Badges</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Small status indicators with soft pastel backgrounds.
+              </p>
+
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">All Variants</h3>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Badge variant="info">Label</Badge>
+                    <Badge variant="error">Label</Badge>
+                    <Badge variant="neutral">Label</Badge>
+                    <Badge variant="success">Label</Badge>
+                    <Badge variant="outline">Label</Badge>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Examples</h3>
+                  <div className="space-y-3">
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="text-body-md">Status:</span>
+                      <Badge variant="success">Active</Badge>
+                      <Badge variant="error">Failed</Badge>
+                      <Badge variant="neutral">Pending</Badge>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="text-body-md">Notifications:</span>
+                      <Badge variant="info">5</Badge>
+                      <Badge variant="info">99+</Badge>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
               <h2 className="text-headline-md-em font-display text-foreground mb-4">Breadcrumb</h2>
               <p className="text-body-md text-muted-foreground mb-6">
                 Displays navigation hierarchy to help users understand their current location.
@@ -619,6 +536,89 @@ export default function Playground() {
                       </BreadcrumbItem>
                     </BreadcrumbList>
                   </Breadcrumb>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-6">Button Variants</h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Primary (Default Variant)</h3>
+                  <div className="flex flex-wrap gap-4">
+                    <Button variant="default" data-testid="button-primary">
+                      <Plus />
+                      Button
+                    </Button>
+                    <Button variant="default" data-testid="button-primary-text-only">
+                      Button
+                    </Button>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Secondary (Outline Variant)</h3>
+                  <div className="flex flex-wrap gap-4">
+                    <Button variant="outline" data-testid="button-secondary">
+                      <Download />
+                      Button
+                    </Button>
+                    <Button variant="outline" data-testid="button-secondary-text-only">
+                      Button
+                    </Button>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Tertiary (Ghost Variant)</h3>
+                  <div className="flex flex-wrap gap-4">
+                    <Button variant="ghost" data-testid="button-tertiary">
+                      <Settings />
+                      Button
+                    </Button>
+                    <Button variant="ghost" data-testid="button-tertiary-text-only">
+                      Button
+                    </Button>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Sizes</h3>
+                  <div className="flex flex-wrap items-center gap-4">
+                    <Button size="sm" data-testid="button-size-sm">
+                      <Plus />
+                      Small
+                    </Button>
+                    <Button size="default" data-testid="button-size-default">
+                      <Plus />
+                      Default
+                    </Button>
+                    <Button size="lg" data-testid="button-size-lg">
+                      <Plus />
+                      Large
+                    </Button>
+                    <Button size="icon" data-testid="button-size-icon">
+                      <Plus />
+                    </Button>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-title-md-em text-foreground mb-4">Disabled State</h3>
+                  <div className="flex flex-wrap gap-4">
+                    <Button variant="default" disabled data-testid="button-disabled-primary">
+                      <Plus />
+                      Disabled
+                    </Button>
+                    <Button variant="outline" disabled data-testid="button-disabled-secondary">
+                      <Download />
+                      Disabled
+                    </Button>
+                    <Button variant="ghost" disabled data-testid="button-disabled-tertiary">
+                      <Settings />
+                      Disabled
+                    </Button>
+                  </div>
                 </div>
               </div>
             </section>
