@@ -24,6 +24,8 @@ import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "@/comp
 import { Label } from "@/components/ui/label";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarSeparator, MenubarShortcut, MenubarTrigger } from "@/components/ui/menubar";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -1373,6 +1375,172 @@ export default function Playground() {
                     />
                   </div>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Menubar</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A horizontal menu bar with dropdown menus, keyboard shortcuts, and separators.
+              </p>
+              <div className="flex justify-center">
+                <Menubar data-testid="component-menubar">
+                  <MenubarMenu>
+                    <MenubarTrigger>File</MenubarTrigger>
+                    <MenubarContent>
+                      <MenubarItem>
+                        New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+                      </MenubarItem>
+                      <MenubarItem>
+                        New Window <MenubarShortcut>⌘N</MenubarShortcut>
+                      </MenubarItem>
+                      <MenubarSeparator />
+                      <MenubarItem>Share</MenubarItem>
+                      <MenubarSeparator />
+                      <MenubarItem>Print</MenubarItem>
+                    </MenubarContent>
+                  </MenubarMenu>
+                  <MenubarMenu>
+                    <MenubarTrigger>Edit</MenubarTrigger>
+                    <MenubarContent>
+                      <MenubarItem>
+                        Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+                      </MenubarItem>
+                      <MenubarItem>
+                        Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+                      </MenubarItem>
+                      <MenubarSeparator />
+                      <MenubarItem>
+                        Cut <MenubarShortcut>⌘X</MenubarShortcut>
+                      </MenubarItem>
+                      <MenubarItem>
+                        Copy <MenubarShortcut>⌘C</MenubarShortcut>
+                      </MenubarItem>
+                      <MenubarItem>
+                        Paste <MenubarShortcut>⌘V</MenubarShortcut>
+                      </MenubarItem>
+                    </MenubarContent>
+                  </MenubarMenu>
+                  <MenubarMenu>
+                    <MenubarTrigger>View</MenubarTrigger>
+                    <MenubarContent>
+                      <MenubarItem>Toggle Sidebar</MenubarItem>
+                      <MenubarItem>Toggle Fullscreen</MenubarItem>
+                      <MenubarSeparator />
+                      <MenubarItem>Zoom In</MenubarItem>
+                      <MenubarItem>Zoom Out</MenubarItem>
+                    </MenubarContent>
+                  </MenubarMenu>
+                </Menubar>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Navigation Menu</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A navigation menu with dropdown content panels for complex site navigation.
+              </p>
+              <div className="flex justify-center">
+                <NavigationMenu data-testid="component-navigation-menu">
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>Getting Started</NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                          <li className="row-span-3">
+                            <NavigationMenuLink asChild>
+                              <a
+                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary-95 to-primary-90 p-6 no-underline outline-none focus:shadow-md"
+                                href="/"
+                              >
+                                <div className="mb-2 mt-4 text-title-lg-em">
+                                  CargoSprint DS
+                                </div>
+                                <p className="text-body-sm text-muted-foreground">
+                                  A comprehensive Material Design 3 based design system.
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/playground">
+                                <div className="text-body-md-em leading-none">Components</div>
+                                <p className="line-clamp-2 text-body-sm leading-snug text-muted-foreground">
+                                  Browse all available UI components
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/playground">
+                                <div className="text-body-md-em leading-none">Typography</div>
+                                <p className="line-clamp-2 text-body-sm leading-snug text-muted-foreground">
+                                  Explore the typography system
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/playground">
+                                <div className="text-body-md-em leading-none">Buttons</div>
+                                <p className="line-clamp-2 text-body-sm leading-snug text-muted-foreground">
+                                  Interactive button components
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/playground">
+                                <div className="text-body-md-em leading-none">Forms</div>
+                                <p className="line-clamp-2 text-body-sm leading-snug text-muted-foreground">
+                                  Form inputs and validation
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/playground">
+                                <div className="text-body-md-em leading-none">Cards</div>
+                                <p className="line-clamp-2 text-body-sm leading-snug text-muted-foreground">
+                                  Card container components
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/playground">
+                                <div className="text-body-md-em leading-none">Dialogs</div>
+                                <p className="line-clamp-2 text-body-sm leading-snug text-muted-foreground">
+                                  Modal and dialog components
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <Link to="/playground">
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                          Documentation
+                        </NavigationMenuLink>
+                      </Link>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
               </div>
             </section>
           </TabsContent>
