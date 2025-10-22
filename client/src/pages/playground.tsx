@@ -22,6 +22,7 @@ import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check, ChevronsU
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -1260,6 +1261,41 @@ export default function Playground() {
               </p>
               <div className="flex justify-center">
                 <FormDemo />
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Hover Card</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A hover card component that displays additional information when hovering over an element.
+              </p>
+              <div className="flex justify-center">
+                <HoverCard>
+                  <HoverCardTrigger asChild>
+                    <Button variant="ghost" data-testid="component-hovercard-trigger">@nextjs</Button>
+                  </HoverCardTrigger>
+                  <HoverCardContent className="w-80" data-testid="component-hovercard-content">
+                    <div className="flex justify-between space-x-4">
+                      <Avatar>
+                        <div className="h-12 w-12 rounded-full bg-primary-40 flex items-center justify-center">
+                          <span className="text-title-lg text-primary-100">N</span>
+                        </div>
+                      </Avatar>
+                      <div className="space-y-1">
+                        <h4 className="text-body-md-em">@nextjs</h4>
+                        <p className="text-body-sm text-muted-foreground">
+                          The React Framework - created and maintained by @vercel.
+                        </p>
+                        <div className="flex items-center pt-2">
+                          <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
+                          <span className="text-label-sm text-muted-foreground">
+                            Joined December 2021
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
               </div>
             </section>
           </TabsContent>
