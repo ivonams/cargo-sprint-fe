@@ -106,6 +106,9 @@ This project follows best practices from several guideline documents:
     - Select: Dropdown selection component for choosing from a list of fruits
     - Separator: Visual divider to separate content sections (horizontal and vertical orientations)
     - Sheet: Sliding panel that appears from the edge of the screen with profile editing form
+    - Skeleton: Placeholder component showing loading states with animated pulse effect (avatar, text lines, and image placeholders)
+    - Slider: Input control for selecting a value from a range (Volume, Brightness examples with disabled state)
+    - Switch: Toggle switch component for binary on/off states (Airplane Mode, Notifications examples with disabled state)
   - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 

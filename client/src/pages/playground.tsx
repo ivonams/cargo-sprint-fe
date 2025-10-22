@@ -35,6 +35,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Slider } from "@/components/ui/slider";
+import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -1839,6 +1842,78 @@ export default function Playground() {
                     </div>
                   </SheetContent>
                 </Sheet>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Skeleton</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A placeholder component to show loading states with animated pulse effect.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4 max-w-md w-full">
+                  <div className="flex items-center space-x-4" data-testid="component-skeleton-1">
+                    <Skeleton className="h-12 w-12 rounded-full" />
+                    <div className="space-y-2 flex-1">
+                      <Skeleton className="h-4 w-full" />
+                      <Skeleton className="h-4 w-4/5" />
+                    </div>
+                  </div>
+                  <div className="space-y-2" data-testid="component-skeleton-2">
+                    <Skeleton className="h-4 w-full" />
+                    <Skeleton className="h-4 w-full" />
+                    <Skeleton className="h-4 w-2/3" />
+                  </div>
+                  <div className="space-y-2" data-testid="component-skeleton-3">
+                    <Skeleton className="h-[200px] w-full rounded-xl" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Slider</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                An input control for selecting a value from a range.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-6 max-w-md w-full">
+                  <div className="space-y-2">
+                    <Label htmlFor="volume-slider" className="text-body-sm">Volume</Label>
+                    <Slider id="volume-slider" defaultValue={[50]} max={100} step={1} data-testid="component-slider-1" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="brightness-slider" className="text-body-sm">Brightness</Label>
+                    <Slider id="brightness-slider" defaultValue={[75]} max={100} step={1} data-testid="component-slider-2" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="range-slider" className="text-body-sm">Range (disabled)</Label>
+                    <Slider id="range-slider" defaultValue={[33]} max={100} step={1} disabled data-testid="component-slider-3" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Switch</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A toggle switch component for binary on/off states.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-2">
+                    <Switch id="airplane-mode" data-testid="component-switch-1" />
+                    <Label htmlFor="airplane-mode" className="text-body-sm cursor-pointer">Airplane Mode</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Switch id="notifications" defaultChecked data-testid="component-switch-2" />
+                    <Label htmlFor="notifications" className="text-body-sm cursor-pointer">Enable Notifications</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Switch id="dark-mode" disabled data-testid="component-switch-3" />
+                    <Label htmlFor="dark-mode" className="text-body-sm cursor-pointer opacity-50">Dark Mode (disabled)</Label>
+                  </div>
+                </div>
               </div>
             </section>
           </TabsContent>
