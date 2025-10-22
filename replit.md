@@ -100,6 +100,12 @@ This project follows best practices from several guideline documents:
     - Pagination: Navigation between pages with previous/next controls, page numbers, and ellipsis
     - Popover: Popup overlay that displays content when triggered, with form inputs example
     - Progress: Visual indicator showing completion progress with multiple percentage states (0%, 33%, 66%, 100%)
+    - Radio Group: Set of checkable buttons where only one can be selected at a time (Default, Comfortable, Compact options)
+    - Resizable: Resizable panel groups with draggable handles for adjusting layout dimensions
+    - Scroll Area: Custom scrollable area with styled scrollbars displaying a list of 20 tags
+    - Select: Dropdown selection component for choosing from a list of fruits
+    - Separator: Visual divider to separate content sections (horizontal and vertical orientations)
+    - Sheet: Sliding panel that appears from the edge of the screen with profile editing form
   - All components use CargoSprint DS design tokens, follow Material Design 3 principles, and include proper accessibility features
 - Comprehensive documentation in `design_guidelines.md`
 

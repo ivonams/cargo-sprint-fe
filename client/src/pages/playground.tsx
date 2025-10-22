@@ -29,6 +29,12 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Progress } from "@/components/ui/progress";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Separator } from "@/components/ui/separator";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { DateRange } from "react-day-picker";
@@ -1671,6 +1677,168 @@ export default function Playground() {
                     <Progress value={100} data-testid="component-progress-100" />
                   </div>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Radio Group</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A set of checkable buttons where only one can be selected at a time.
+              </p>
+              <div className="flex justify-center">
+                <RadioGroup defaultValue="option-one" data-testid="component-radio-group">
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="option-one" id="option-one" />
+                    <Label htmlFor="option-one" className="text-body-sm font-normal cursor-pointer">Default</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="option-two" id="option-two" />
+                    <Label htmlFor="option-two" className="text-body-sm font-normal cursor-pointer">Comfortable</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="option-three" id="option-three" />
+                    <Label htmlFor="option-three" className="text-body-sm font-normal cursor-pointer">Compact</Label>
+                  </div>
+                </RadioGroup>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Resizable</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                Resizable panel groups with draggable handles for adjusting layout dimensions.
+              </p>
+              <div className="flex justify-center">
+                <ResizablePanelGroup
+                  direction="horizontal"
+                  className="max-w-md rounded-lg border"
+                  data-testid="component-resizable"
+                >
+                  <ResizablePanel defaultSize={50} minSize={30}>
+                    <div className="flex h-[200px] items-center justify-center p-6">
+                      <span className="text-body-sm text-muted-foreground">Panel One</span>
+                    </div>
+                  </ResizablePanel>
+                  <ResizableHandle withHandle />
+                  <ResizablePanel defaultSize={50} minSize={30}>
+                    <div className="flex h-[200px] items-center justify-center p-6">
+                      <span className="text-body-sm text-muted-foreground">Panel Two</span>
+                    </div>
+                  </ResizablePanel>
+                </ResizablePanelGroup>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Scroll Area</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A custom scrollable area with styled scrollbars.
+              </p>
+              <div className="flex justify-center">
+                <ScrollArea className="h-[200px] w-[350px] rounded-md border p-4" data-testid="component-scroll-area">
+                  <div className="space-y-4">
+                    <h4 className="text-body-md-em mb-4">Tags</h4>
+                    <div className="space-y-2">
+                      {Array.from({ length: 20 }).map((_, i) => (
+                        <div key={i} className="text-body-sm">
+                          Tag {i + 1}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </ScrollArea>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Select</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A dropdown selection component for choosing from a list of options.
+              </p>
+              <div className="flex justify-center">
+                <div className="w-[250px]">
+                  <Select data-testid="component-select">
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select a fruit" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="apple">Apple</SelectItem>
+                      <SelectItem value="banana">Banana</SelectItem>
+                      <SelectItem value="blueberry">Blueberry</SelectItem>
+                      <SelectItem value="grapes">Grapes</SelectItem>
+                      <SelectItem value="pineapple">Pineapple</SelectItem>
+                      <SelectItem value="watermelon">Watermelon</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Separator</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A visual divider to separate content sections.
+              </p>
+              <div className="flex justify-center">
+                <div className="space-y-4 w-full max-w-sm">
+                  <div>
+                    <h4 className="text-body-sm-em mb-2">Horizontal Separator</h4>
+                    <div className="space-y-1">
+                      <div className="text-body-sm">Section One</div>
+                      <Separator data-testid="component-separator-horizontal" />
+                      <div className="text-body-sm">Section Two</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-body-sm-em mb-2">Vertical Separator</h4>
+                    <div className="flex h-10 items-center space-x-4">
+                      <div className="text-body-sm">Item One</div>
+                      <Separator orientation="vertical" data-testid="component-separator-vertical" />
+                      <div className="text-body-sm">Item Two</div>
+                      <Separator orientation="vertical" />
+                      <div className="text-body-sm">Item Three</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Sheet</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A sliding panel that appears from the edge of the screen, similar to a drawer.
+              </p>
+              <div className="flex justify-center gap-4">
+                <Sheet>
+                  <SheetTrigger asChild>
+                    <Button variant="outline" data-testid="component-sheet-trigger">Open Sheet</Button>
+                  </SheetTrigger>
+                  <SheetContent data-testid="component-sheet-content">
+                    <SheetHeader>
+                      <SheetTitle>Edit profile</SheetTitle>
+                      <SheetDescription>
+                        Make changes to your profile here. Click save when you're done.
+                      </SheetDescription>
+                    </SheetHeader>
+                    <div className="grid gap-4 py-4">
+                      <div className="grid grid-cols-4 items-center gap-4">
+                        <Label htmlFor="name" className="text-right">
+                          Name
+                        </Label>
+                        <Input id="name" defaultValue="Pedro Duarte" className="col-span-3" />
+                      </div>
+                      <div className="grid grid-cols-4 items-center gap-4">
+                        <Label htmlFor="username" className="text-right">
+                          Username
+                        </Label>
+                        <Input id="username" defaultValue="@peduarte" className="col-span-3" />
+                      </div>
+                    </div>
+                    <div className="flex justify-end">
+                      <Button type="submit">Save changes</Button>
+                    </div>
+                  </SheetContent>
+                </Sheet>
               </div>
             </section>
           </TabsContent>
