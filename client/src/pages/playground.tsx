@@ -7,7 +7,8 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Avatar, AvatarGroup } from "@/components/ui/avatar";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Plus, Download, Settings, Terminal, AlertCircle } from "lucide-react";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Plus, Download, Settings, Terminal, AlertCircle, Bell, Check } from "lucide-react";
 import { sprintDSColorsHSL } from "@shared/sprint-ds-colors-hsl";
 import { CargoSprintLogo, CargoSprintSymbol, SprintPayLogo, EModalLogo, SprintPassLogo, SprintPortLogo } from "@/components/branding";
 import { Link } from "react-router-dom";
@@ -629,6 +630,93 @@ export default function Playground() {
                     </BreadcrumbList>
                   </Breadcrumb>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-headline-md-em font-display text-foreground mb-4">Card</h2>
+              <p className="text-body-md text-muted-foreground mb-6">
+                A flexible container for grouping related content and actions.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Card data-testid="component-card-basic">
+                  <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card description goes here to explain what this card is about.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-body-md">This is the card content area where you can place any content like text, images, or other components.</p>
+                  </CardContent>
+                </Card>
+
+                <Card data-testid="component-card-with-footer">
+                  <CardHeader>
+                    <CardTitle>Card with Footer</CardTitle>
+                    <CardDescription>This card includes a footer section with actions.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-body-md">Card content can contain any React components or HTML elements.</p>
+                  </CardContent>
+                  <CardFooter className="gap-2">
+                    <Button variant="outline" size="sm">Cancel</Button>
+                    <Button size="sm">Confirm</Button>
+                  </CardFooter>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-2">
+                      <Bell className="h-5 w-5 text-primary-50" />
+                      <CardTitle>Notifications</CardTitle>
+                    </div>
+                    <CardDescription>You have 3 unread messages.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <div className="h-2 w-2 rounded-full bg-primary-50 mt-2" />
+                      <div>
+                        <p className="text-body-sm font-medium">New message from Alice</p>
+                        <p className="text-body-sm text-muted-foreground">2 minutes ago</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="h-2 w-2 rounded-full bg-primary-50 mt-2" />
+                      <div>
+                        <p className="text-body-sm font-medium">Project update available</p>
+                        <p className="text-body-sm text-muted-foreground">1 hour ago</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                  <CardFooter>
+                    <Button variant="ghost" size="sm" className="w-full">
+                      Mark all as read
+                    </Button>
+                  </CardFooter>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Project Stats</CardTitle>
+                    <CardDescription>Overview of your project metrics</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex justify-between items-center">
+                      <span className="text-body-md text-muted-foreground">Total Tasks</span>
+                      <span className="text-title-md-em">48</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-body-md text-muted-foreground">Completed</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-title-md-em">32</span>
+                        <Badge variant="success">67%</Badge>
+                      </div>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-body-md text-muted-foreground">In Progress</span>
+                      <span className="text-title-md-em">16</span>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </section>
           </TabsContent>
